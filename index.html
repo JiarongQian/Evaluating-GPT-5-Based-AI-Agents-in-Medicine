@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG" />
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG" />
+  <meta property="og:url" content="URL OF THE WEBSITE" />
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Evaluating GPT-5-Based AI Agents in Medicine</title>
+  <link rel="icon" type="image/x-icon" href="static/images/logo.">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <img src="static/images/MedASI_logo.png" alt="MedASI Logo"
+                 style="width: 450px; height: auto; vertical-align: middle; margin: 0 0 48px 0;">
+            <h2 class="title is-3 is-normal publication-title" style="font-weight: normal;">Evaluating GPT-5-Based AI Agents in Medicine</h2>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">Zhiling Yan,</span>
+              <span class="author-block">Jiarong Qian,</span>
+              <span class="author-block">Shaohui Zhang,</span>
+              <span class="author-block">Kai Zhang,</span>
+              <span class="author-block">Lifang He,</span>
+              <span class="author-block">Jing Huang,</span>
+              <span class="author-block">Lichao Sun</span>
+
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">Lehigh University, University of Pennsylvania<br>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- Arxiv PDF link -->
+                <span class="link-block">
+                  <a href="https://" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+
+                
+
+                <!-- Github link -->
+                <span class="link-block">
+                  <a href="https://" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <!-- <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                  </a>
+                </span> -->
+                <!-- Leaderboard link -->
+                <span class="link-block">
+                  <a href="#Leaderboard" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-trophy"></i>
+                    </span>
+                    <span>Leaderboard</span>
+                  </a>
+                </span>
+                <!-- Examples link -->
+                <span class="link-block">
+                  <a href="#Examples" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-image"></i>
+                    </span>
+                    <span>Examples</span>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Teaser video-->
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <img src="./static/images/overview.jpg"
+          alt="Figure 1: Comparison of Accuracy Across Different Models and Methods on the MMMR Dataset.">
+        <p class="has-text-centered">
+          Figure 1：Overview of the Dignosis Dataset and model evaluation.
+          The left panel shows 198 cases across 11 disease categories and 9 image modalities. The middle panel illustrates cognitive complexity, progressing from ChatGPT reasoning to Web Agent execution. The right panel compares MVA% performance of different GPT-5 and ChatGPT configurations to assess the impact of reasoning and retrieval capabilities on accuracy.
+          
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- End teaser video -->
+
+  <!-- Paper Introduction -->
+  <section class="section ">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-10">
+          <h2 class="title is-3">
+            <img src="./static/images/nurse (1).png" alt=""
+              style="width: 60px; height: auto; vertical-align: middle; margin-right: 10px; display: inline-block;">
+            <span style="vertical-align: middle;">Introduction</span>
+            <img src="./static/images/nurse.png" alt=""
+              style="width: 60px; height: auto; vertical-align: middle; margin-left: 10px; display: inline-block;">
+          </h2>
+          <div class="content has-text-justified">
+            <p>
+              Large language models (LLMs) are increasingly being augmented with reasoning and tool-use capabilities, creating a spectrum of AI systems from simple chatbots to autonomous agents. This rapid evolution has fueled visions of Artificial Super Intelligence (ASI) revolutionizing medicine, yet the true gap between current systems and this future remains unquantified. It is unclear how incremental capabilities, from web search to agentic planning, affect performance on the path towards superhuman clinical intelligence, necessitating a comprehensive, ecosystem-wide evaluation. Here, we systematically evaluate the performance of a hierarchy of OpenAI models and systems on medical diagnosis tasks. Our analysis spans from the base large language model (e.g., GPT-5) to models enhanced with reasoning, web search, a deep research function, and a fully autonomous agent. We show that while augmenting models with external information tools improves data retrieval, it does not consistently translate to superior diagnostic accuracy and can introduce new error vectors. This work provides a crucial benchmark of OpenAI's model ecosystem, establishing a rigorous methodology for evaluating the true clinical readiness of increasingly complex AI systems and guiding their responsible integration into healthcare. Our new evaluation platform aims to establish a rigorous methodology for tracking progress and guiding the responsible development of AI towards a future of safe and reliable super-intelligence in medicine.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End paper abstract -->
+
+
+  <!-- dataset -->
+  <section class="hero is-light">
+    <div class="container">
+      <div class="has-text-centered" style="padding: 20px 0;">
+        <h2 class="title is-1">
+          <span style="vertical-align: middle;">Diagnosis Dataset</span>
+        </h2>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <!-- dataset overview -->
+        <div class="columns is-centered">
+          <div class="column is-10">
+            <div class="content">
+              <p class="has-text-justified">
+                We evaluate on HealthBench, a publicly available benchmark introduced by OpenAI for Human Health tasks. The dataset contains 198 diagnosis cases distributed across 11 body systems—Cardiovascular (40 cases), Digestive (35), Respiratory (34), Skeletal (31), Nervous (22), Reproductive (9), Endocrine (9), Integumentary (7), Lymphatic (5), Muscular (4), and Urinary (2). Each case has a unique identifier and an open-ended, reasoning-style diagnostic question paired with medical images spanning CT, MRI, X-ray, PET, pathology images, EEG/ECG recordings, charts, and real-world photographs, together with a clinically validated ground-truth diagnosis.
+              </p>
+            </div>
+            
+            <!-- Dataset images carousel -->
+            <div class="has-text-centered" style="margin: 30px 0;">
+              <div id="dataset-carousel" class="carousel results-carousel">
+                <div class="item">
+                  <img src="./static/images/dataset_1.jpg" alt="Dataset image 1" />
+                  <h2 class="subtitle has-text-centered">Dataset Image 1</h2>
+                </div>
+                <div class="item">
+                  <img src="./static/images/dataset_2.jpg" alt="Dataset image 2" />
+                  <h2 class="subtitle has-text-centered">Dataset Image 2</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- End image carousel -->
+  <!-- End dataset -->
+
+  <!-- Leaderboard -->
+  <section class="hero is-light">
+    <div class="container">
+      <div class="has-text-centered" style="padding: 20px 0;">
+        <h2 class="title is-1">
+          <img src="./static/images/leaderboard.png" alt=""
+            style="width: 70px; height: auto; vertical-align: middle; margin-right: 10px; display: inline-block;">
+          <span style="vertical-align: middle;" id="Leaderboard">Leaderboard</span>
+        </h2>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-10">
+          <div class="table-container">
+            <div class="table-title">
+              Table 1: Performance of Different GPT-5 Models on the Dignosis Dataset (Accuracy %)
+            </div>
+            <table id="leaderboard-table" class="table is-bordered is-fullwidth">
+              <thead>
+                <tr>
+                  <th>Model</th>
+                  <th>Result</th>
+                  <th>Accuracy (%)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>GPT-5</td>
+                  <td>55/198</td>
+                  <td>27.77</td>
+                </tr>
+                <tr>
+                  <td>GPT-5 Web Search</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>GPT-5 Thinking</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>GPT-5 Thinking (quick)</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <!-- LLMs without thinking -->
+                
+                <tr>
+                  <td>GPT-5 Thinking Web Search</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>GPT-5 Thinking (quick) Web Search</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>GPT-5 Pro</td>
+                  <td>63/198</td>
+                  <td>31.77</td>
+                </tr>
+                <tr>
+                  <td>GPT-5 Pro Web Search</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>ChatGPT Agent</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Deep Research</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                
+                
+                
+                
+              </tbody>
+            </table>
+          </div>
+          <!-- <p class="has-text-centered is-size-7 mt-2">表格显示了不同模型在MMMR数据集上的表现（准确率%）。粗体数字表示各列的最佳结果。带*的模型使用了专门设计的提示。</p> -->
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- End Leaderboard -->
+
+
+
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+
+        <!-- Image carousel -->
+        <h2 class="title is-3" style="text-align: center;">
+          <span style="vertical-align: middle;">Statistics</span>
+        </h2>
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item">
+            <!-- Your image here -->
+            <img src="static/images/data_summary.png" alt="Figure 3: Data Summary." />
+            <h2 class="subtitle has-text-centered">
+              Figure 3: Data Summary.
+            </h2>
+          </div>
+          <div class="item">
+            <!-- Your image here -->
+            <img src="static/images/comparison.png"
+              alt="Figure 4: Comparison of representative multi-modal reasoning datasets." />
+            <h2 class="subtitle has-text-centered">
+              Figure 4: Comparison of representative multi-modal reasoning datasets.
+            </h2>
+          </div>
+          <div class="item">
+            <!-- Your image here -->
+            <img src="static/images/statistics.png" alt="Figure 5: Statistical overview of MMMR dataset." />
+            <h2 class="subtitle has-text-centered">
+              Figure 5: Statistical overview of MMMR dataset.
+            </h2>
+          </div>
+        </div>
+        <!-- Image carousel -->
+        <h2 class="title is-3" style="text-align: center;">
+          <br>
+          <span style="vertical-align: middle;" id="Examples">Examples</span>
+        </h2>
+        <div id="results-carousel2" class="carousel results-carousel results-carousel2">
+          <div class="item">
+            <!-- Your image here -->
+            <img src="static/images/logic-1.png" alt="Figure 6: Logic: Thinking Case" />
+            <h2 class="subtitle has-text-centered">
+              Figure 6: Logic: Thinking Case
+            </h2>
+          </div>
+          <div class="item">
+            <!-- Your image here -->
+            <img src="static/images/logic-2.png" alt="Figure 7: 3D Logic: Non-Thinking Case" />
+            <h2 class="subtitle has-text-centered">
+              Figure 7: Logic: Non-Thinking Case
+            </h2>
+          </div>
+           <div class="item">
+            <!-- Your image here -->
+            <img src="static/images/logic-3.png" alt="Figure 8: 2D Logic: Non-Thinking Case" />
+            <h2 class="subtitle has-text-centered">
+              Figure 8: Logic: Non-Thinking Case
+            </h2>
+          </div>
+          <div class="item">
+            <!-- Your image here -->
+            <img src="static/images/math-1.png" alt="Figure 9: Math: Thinking Case" />
+            <h2 class="subtitle has-text-centered">
+              Figure 9: Math: Thinking Case
+            </h2>
+          </div>
+          <div class="item">
+            <!-- Your image here -->
+            <img src="static/images/math-2.png" alt="Figure 10: Math: Non-Thinking Case" />
+            <h2 class="subtitle has-text-centered">
+              Figure 10: Math: Non-Thinking Case
+            </h2>
+          </div>
+          <div class="item">
+            <!-- Your image here -->
+            <img src="static/images/math-3.png" alt="Figure 11: Math: Non-Thinking Case" />
+            <h2 class="subtitle has-text-centered">
+              Figure 11: Math: Non-Thinking Case
+            </h2>
+          </div>
+           <div class="item">
+            <!-- Your image here -->
+            <img src="static/images/math-4.png" alt="Figure 12: Math: Non-Thinking Case" />
+            <h2 class="subtitle has-text-centered">
+              Figure 12: Math: Non-Thinking Case
+            </h2>
+          </div>
+           <div class="item">
+            <!-- Your image here -->
+            <img src="static/images/math-5.png" alt="Figure 13: Math: Non-Thinking Case" />
+            <h2 class="subtitle has-text-centered">
+              Figure 13: Math: Non-Thinking Case
+            </h2>
+          </div>
+          <div class="item">
+            <!-- Your image here -->
+            <img src="static/images/space-time-1.png" alt="Figure 14: Space Reasoning: Thinking Case" />
+            <h2 class="subtitle has-text-centered">
+              Figure 14: Space Reasoning: Thinking Case
+            </h2>
+          </div>
+           <div class="item">
+            <!-- Your image here -->
+            <img src="static/images/space-time-2.png" alt="Figure 15: Space Reasoning: Non-Thinking Case" />
+            <h2 class="subtitle has-text-centered">
+              Figure 15: Space Reasoning: Non-Thinking Case
+            </h2>
+          </div>
+           <div class="item">
+            <!-- Your image here -->
+            <img src="static/images/space-time-3.png" alt="Figure 16: Space Reasoning: Non-Thinking Case" />
+            <h2 class="subtitle has-text-centered">
+              Figure 16: Space Reasoning: Non-Thinking Case
+            </h2>
+          </div>
+          <div class="item">
+            <!-- Your image here -->
+            <img src="static/images/science-1.png" alt="Figure 17: Science: Thinking Case" />
+            <h2 class="subtitle has-text-centered">
+              Figure 17: Science: Thinking Case
+            </h2>
+          </div>
+          <div class="item">
+            <!-- Your image here -->
+            <img src="static/images/science-2.png" alt="Figure 18: Science: Non-Thinking Case" />
+            <h2 class="subtitle has-text-centered">
+              Figure 18: Science: Non-Thinking Case
+            </h2>
+          </div>
+          <div class="item">
+            <!-- Your image here -->
+            <img src="static/images/science-3.png" alt="Figure 19: Science: Non-Thinking Case" />
+            <h2 class="subtitle has-text-centered">
+              Figure 19: Science: Non-Thinking Case
+            </h2>
+          </div>
+          <div class="item">
+            <!-- Your image here -->
+            <img src="static/images/science-4.png" alt="Figure 20: Science: Non-Thinking Case" />
+            <h2 class="subtitle has-text-centered">
+              Figure 20: Science: Non-Thinking Case
+            </h2>
+          </div>
+          <div class="item">
+            <!-- Your image here -->
+            <img src="static/images/science-5.png" alt="Figure 21: Science: Non-Thinking Case" />
+            <h2 class="subtitle has-text-centered">
+              Figure 21: Science: Non-Thinking Case
+            </h2>
+          </div>
+          <div class="item">
+            <!-- Your image here -->
+            <img src="static/images/code-1.png" alt="Figure 22: Code: Thinking Case" />
+            <h2 class="subtitle has-text-centered">
+              Figure 22: Code: Thinking Case
+            </h2>
+          </div>
+          <div class="item">
+            <!-- Your image here -->
+            <img src="static/images/code-2.png" alt="Figure 23: Code: Non-Thinking Case" />
+            <h2 class="subtitle has-text-centered">
+              Figure 23: Code: Non-Thinking Case
+            </h2>
+          </div>
+           <div class="item">
+            <!-- Your image here -->
+            <img src="static/images/code-3.png" alt="Figure 24: Code: Non-Thinking Case" />
+            <h2 class="subtitle has-text-centered">
+              Figure 24: Code: Non-Thinking Case
+            </h2>
+          </div>
+           <div class="item">
+            <!-- Your image here -->
+            <img src="static/images/map-1.png" alt="Figure 25: Map: Thinking Case" />
+            <h2 class="subtitle has-text-centered">
+              Figure 25: Map: Thinking Case
+            </h2>
+          </div>
+            <div class="item">
+            <!-- Your image here -->
+            <img src="static/images/map-2.png" alt="Figure 26: Map: Non-Thinking Case" />
+            <h2 class="subtitle has-text-centered">
+              Figure 26: Map: Non-Thinking Case
+            </h2>
+          </div>
+            <div class="item">
+            <!-- Your image here -->
+            <img src="static/images/map-3.png" alt="Figure 27: Map: Non-Thinking Case" />
+            <h2 class="subtitle has-text-centered">
+              Figure 27: Map: Non-Thinking Case
+            </h2>
+          </div>
+      </div>
+  </section>
+  <!-- End image carousel -->
+  <!-- End dataset -->
+
+  <!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@inproceedings{tie2025mmmr,
+        title={TOWARDS ARTIFICIAL SUPER INTELLIGENCE IN HEALTHCARE:EVALUATING GPT-5-BASED AI AGENTS IN MEDICINE},
+        author={Zhiling Yan, Jiarong Qian, Shaohui Zhang, Kai Zhang, Lifang He, Jing Huang, Lichao Sun},
+        booktitle={},
+        year={2025},
+      }
+      </code></pre>
+    </div>
+  </section>
+  <!--End BibTex citation -->
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+
+            <p>
+              This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+                target="_blank">Academic Project Page Template</a> which was adopted from the <a
+                href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+              You are free to borrow the source code of this website, we just ask that you link back to this page in the
+              footer. <br> This website is licensed under a <a rel="license"
+                href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+                Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Statcounter tracking code -->
+
+  <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+  <!-- End of Statcounter Code -->
+
+</body>
+
+</html>
