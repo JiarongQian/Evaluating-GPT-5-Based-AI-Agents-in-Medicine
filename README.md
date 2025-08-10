@@ -61,11 +61,6 @@ The following table shows the performance of different GPT-5 models on the diagn
 | | GPT-5 Thinking | 55/198 | 27.78 |
 | | GPT-5 Thinking (quick) | 52/198 | 26.26 |
 | | GPT-5 Pro | 63/198 | 31.77 |
-<<<<<<< HEAD
-=======
-| | GPT-5 Thinking | 55/198 | 27.77 |
-| | GPT-5 Thinking (quick) | 52/198 | 26.26 |
->>>>>>> c0956b9b3092c65df6aa192305eb721c376414f9
 | **Web-Search** | GPT-5 Web Search | - | - |
 | | GPT-5 Thinking Web Search | - | - |
 | | GPT-5 Thinking (quick) Web Search | - | - |
