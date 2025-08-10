@@ -1,5 +1,6 @@
 <h1>
-  <span style="font-size: 2em; vertical-align: middle;">Medical Agent Benchmark:\\ Evaluating GPT-5-Based AI Agents in Medicine</span>
+  <span style="font-size: 2em; vertical-align: middle;">Medical Agent Benchmark:</span>
+  <span style="font-size: 2em; vertical-align: middle;">Evaluating GPT-5-Based AI Agents in Medicine</span>
 </h1>
 
 ## 👨‍💻 Authors
