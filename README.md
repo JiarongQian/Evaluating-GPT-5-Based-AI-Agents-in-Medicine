@@ -1,29 +1,11 @@
-<<<<<<< HEAD
 # Medical Agent Benchmark: Evaluating GPT-5-Based AI Agents in Medicine
-=======
-<h1>
-  <span style="font-size: 2em; vertical-align: middle;">Medical Agent Benchmark:</span>
-  <span style="font-size: 2em; vertical-align: middle;">Evaluating GPT-5-Based AI Agents in Medicine</span>
-</h1>
->>>>>>> 35853d90cb9e99095a305bf307435c2914573944
 
 ## Overview
 
-<<<<<<< HEAD
 This project presents a comprehensive evaluation of GPT-5-based AI agents in medical diagnosis tasks. We systematically assess the performance of a hierarchy of OpenAI models and systems, from base large language models to autonomous agents, to understand the impact of incremental capabilities on clinical intelligence.
-=======
-Zhiling Yan, Jiarong Qian, Shaohui Zhang, Kai Zhang, Wei Liu, Quanzheng Li, Lifang He, Jing Huang, Lichao Sun  
-Lehigh University, 
-University of Pennsylvania,
-Harvard Medical School,
-Massachusetts General Hospital,
-Mayo Clinic
-
->>>>>>> 35853d90cb9e99095a305bf307435c2914573944
 
 ## Authors
 
-<<<<<<< HEAD
 - **Zhiling Yan**
 - **Jiarong Qian** 
 - **Shaohui Zhang**
@@ -33,9 +15,6 @@ Mayo Clinic
 - **Lifang He**
 - **Jing Huang**
 - **Lichao Sun**
-=======
-MedABench evaluates GPT-5-based models and systems on medical diagnosis tasks. The homepage logo and title reflect the MedASI branding. The landing page包含：
->>>>>>> 35853d90cb9e99095a305bf307435c2914573944
 
 **Affiliations:** Harvard Medical School/Massachusetts General Hospital, Mayo Clinic, Lehigh University, University of Pennsylvania
 
