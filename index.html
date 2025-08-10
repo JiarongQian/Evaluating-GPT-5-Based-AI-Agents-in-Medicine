@@ -67,6 +67,7 @@
               <span class="author-block">Kai Zhang,</span>
               <span class="author-block">Wei Liu,</span>
               <span class="author-block">Quangzheng Li,</span>
+              <span class="author-block">Xiang Li</span>
               <span class="author-block">Lifang He,</span>
               <span class="author-block">Jing Huang,</span>
               <span class="author-block">Lichao Sun</span>
@@ -74,7 +75,7 @@
             </div>
 
             <div class="is-size-5 publication-authors">
-              <span class="author-block">Harvard Medical School/Massachusetts General Hospital,Mayo Clinic, Lehigh University, University of Pennsylvania<br>
+              <span class="author-block">Lehigh University, University of Pennsylvania, Mayo Clinic, Harvard Medical School, Massachusetts General Hospital
             </div>
 
             <div class="column has-text-centered">
@@ -201,7 +202,7 @@
           <div class="column is-10">
             <div class="content">
               <p class="has-text-justified">
-                We evaluate on HealthBench, a publicly available benchmark introduced by OpenAI for Human Health tasks. The dataset contains 198 diagnosis cases distributed across 11 body systems—Cardiovascular (40 cases), Digestive (35), Respiratory (34), Skeletal (31), Nervous (22), Reproductive (9), Endocrine (9), Integumentary (7), Lymphatic (5), Muscular (4), and Urinary (2). Each case has a unique identifier and an open-ended, reasoning-style diagnostic question paired with medical images spanning CT, MRI, X-ray, PET, pathology images, EEG/ECG recordings, charts, and real-world photographs, together with a clinically validated ground-truth diagnosis.
+                Our dataset is derived from MedXpertQA, a publicly available benchmark introduced for Human Health tasks. The dataset contains 198 diagnosis cases distributed across 11 body systems—Cardiovascular (40 cases), Digestive (35), Respiratory (34), Skeletal (31), Nervous (22), Reproductive (9), Endocrine (9), Integumentary (7), Lymphatic (5), Muscular (4), and Urinary (2). Each case has a unique identifier and an open-ended, reasoning-style diagnostic question paired with medical images spanning CT, MRI, X-ray, PET, pathology images, EEG/ECG recordings, charts, and real-world photographs, together with a clinically validated ground-truth diagnosis.
               </p>
             </div>
             
@@ -260,7 +261,7 @@
               <tbody>
                 <!-- LLL Group -->
                 <tr class="group-1">
-                  <td rowspan="4" class="has-text-weight-bold" style="text-align: center; vertical-align: middle;">LLL</td>
+                  <td rowspan="4" class="has-text-weight-bold" style="text-align: center; vertical-align: middle;">LLM</td>
                   <td class="model-1">GPT-5</td>
                   <td class="data-cell">
                     <span class="cell-value">55/198</span>
@@ -271,22 +272,12 @@
                   </td>
                 </tr>
                 <tr>
-                  <td class="model-1">GPT-5 Pro</td>
-                  <td class="data-cell">
-                    <span class="cell-value">63/198</span>
-                  </td>
-                  <td class="data-cell">
-                    <div class="progress-bar-1" style="width: 31.77%;"></div>
-                    <span class="cell-value">31.77</span>
-                  </td>
-                </tr>
-                <tr>
                   <td class="model-1">GPT-5 Thinking</td>
                   <td class="data-cell">
                     <span class="cell-value">55/198</span>
                   </td>
                   <td class="data-cell">
-                    <div class="progress-bar-1" style="width: 27.77%;"></div>
+                    <div class="progress-bar-1" style="width: 31.77%;"></div>
                     <span class="cell-value">27.78</span>
                   </td>
                 </tr>
@@ -296,8 +287,18 @@
                     <span class="cell-value">52/198</span>
                   </td>
                   <td class="data-cell">
-                    <div class="progress-bar-1" style="width: 26.77%;"></div>
+                    <div class="progress-bar-1" style="width: 27.77%;"></div>
                     <span class="cell-value">26.26</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="model-1">GPT-5 Pro</td>
+                  <td class="data-cell">
+                    <span class="cell-value"> 63/198</span>
+                  </td>
+                  <td class="data-cell">
+                    <div class="progress-bar-1" style="width: 26.77%;"></div>
+                    <span class="cell-value"> 31.77</span>
                   </td>
                 </tr>
                 
@@ -305,16 +306,6 @@
                 <tr class="group-2">
                   <td rowspan="4" class="has-text-weight-bold" style="text-align: center; vertical-align: middle;">Web-Search</td>
                   <td class="model-2">GPT-5 Web Search</td>
-                  <td class="data-cell">
-                    <span class="cell-value">-</span>
-                  </td>
-                  <td class="data-cell">
-                    <div class="progress-bar-2" style="width: 0%;"></div>
-                    <span class="cell-value">-</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="model-2">GPT-5 Pro Web Search</td>
                   <td class="data-cell">
                     <span class="cell-value">-</span>
                   </td>
@@ -335,6 +326,16 @@
                 </tr>
                 <tr>
                   <td class="model-2">GPT-5 Thinking (quick) Web Search</td>
+                  <td class="data-cell">
+                    <span class="cell-value">-</span>
+                  </td>
+                  <td class="data-cell">
+                    <div class="progress-bar-2" style="width: 0%;"></div>
+                    <span class="cell-value">-</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="model-2"> GPT-5 Pro Web Search</td>
                   <td class="data-cell">
                     <span class="cell-value">-</span>
                   </td>
