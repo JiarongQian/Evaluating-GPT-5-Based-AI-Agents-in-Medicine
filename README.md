@@ -64,7 +64,7 @@ The following table shows the performance of different GPT-5 models on the diagn
 | **Web-Search** | GPT-5 Web Search | - | - |
 | | GPT-5 Thinking Web Search | - | - |
 | | GPT-5 Thinking (quick) Web Search | - | - |
-| | GPT-5 Pro Web Search | - | - |
+| | GPT-5 Pro Web Search | 78/198|40.30 |
 | **Agent** | ChatGPT Agent | - | - |
 | | Deep Research | - | - |
 
