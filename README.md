@@ -7,14 +7,14 @@ This project presents a comprehensive evaluation of GPT-5-based AI agents in med
 ## Authors
 
 - **Zhiling Yan** - Lehigh University
-- **Jiarong Qian** - Lehigh University
-- **Shaohui Zhang** - Lehigh University  
+- **Jiarong Qian** -
+- **Shaohui Zhang** - University of Pennsylvania
 - **Kai Zhang** - Lehigh University
-- **Wei Liu** - Lehigh University
+- **Wei Liu** - Mayo Clinic
 - **Quangzheng Li** - Lehigh University
-- **Xiang Li** - Lehigh University
+- **Xiang Li** - MGH/Harvard Medical School
 - **Lifang He** - Lehigh University
-- **Jing Huang** - Lehigh University
+- **Jing Huang** - University of Pennsylvania
 - **Lichao Sun** - Lehigh University
 
 **Affiliations:** Lehigh University, University of Pennsylvania, Mayo Clinic, Harvard Medical School, Massachusetts General Hospital
