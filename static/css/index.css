@@ -259,27 +259,27 @@ body {
   word-wrap: break-word; /* 长文本自动换行 */
 }
 
-/* Leaderboard 专用列宽（3个有效列 + 6个占位） */
+/* Leaderboard 专用列宽（4列） */
 #leaderboard-table th,
 #leaderboard-table td {
-  width: calc(100% / 3) !important; /* 三列 */
+  width: calc(100% / 4) !important; /* 四列 */
 }
 
 #leaderboard-table th:first-child,
 #leaderboard-table td:first-child {
-  width: 40% !important; /* 模型列更宽 */
+  width: 20% !important; /* Category列 */
 }
 
-/* 第一列可以稍宽一些，用于容纳模型名称 */
-.table th:first-child,
-.table td:first-child {
-  width: calc(100% / 9 * 2) !important;
+#leaderboard-table th:nth-child(2),
+#leaderboard-table td:nth-child(2) {
+  width: 35% !important; /* Model列更宽 */
 }
 
-/* 其他列相应减小一点宽度 */
-#leaderboard-table th:not(:first-child),
-#leaderboard-table td:not(:first-child) {
-  width: 30% !important;
+#leaderboard-table th:nth-child(3),
+#leaderboard-table td:nth-child(3),
+#leaderboard-table th:nth-child(4),
+#leaderboard-table td:nth-child(4) {
+  width: 22.5% !important; /* Result和Accuracy列 */
 }
 
 /* 强制所有单元格内容居中 */

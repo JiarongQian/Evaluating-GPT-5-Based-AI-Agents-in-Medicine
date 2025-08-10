@@ -52,8 +52,12 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <img src="static/images/MedASI_logo.png" alt="MedASI Logo"
-                 style="width: 450px; height: auto; vertical-align: middle; margin: 0 0 48px 0;">
+            <div style="position: relative; display: flex; justify-content: center; align-items: center; margin-bottom: 48px;">
+              <img src="static\images\MedABench_logo.png" alt="MedABench Logo"
+                   style="width: 450px; height: auto; vertical-align: middle;">
+              <img src="static\images\LOGO.png" alt="Project Logo"
+                   style="position: absolute; left: calc(50% - 350px); width: 180px; height: auto; vertical-align: middle;">
+            </div>
             <h2 class="title is-3 is-normal publication-title" style="font-weight: normal;">Medical Agent Benchmark: Evaluating GPT-5-Based AI Agents in Medicine</h2>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
@@ -242,7 +246,7 @@
         <div class="column is-10">
           <div class="table-container">
             <div class="table-title">
-              Table 1: Performance of Different GPT-5 Models on the Dignosis Dataset (Accuracy %)
+              Table 1: Performance of Different GPT-5 Models on the Diagnosis Dataset (Accuracy %)
             </div>
             <table id="leaderboard-table" class="table is-bordered is-fullwidth">
               <thead>
@@ -254,65 +258,114 @@
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td rowspan="4">LLL</td>
-                  <td>GPT-5</td>
-                  <td>55/198</td>
-                  <td>27.77</td>
+                <!-- LLL Group -->
+                <tr class="group-1">
+                  <td rowspan="4" class="has-text-weight-bold" style="text-align: center; vertical-align: middle;">LLL</td>
+                  <td class="model-1">GPT-5</td>
+                  <td class="data-cell">
+                    <span class="cell-value">55/198</span>
+                  </td>
+                  <td class="data-cell">
+                    <div class="progress-bar-1" style="width: 27.77%;"></div>
+                    <span class="cell-value">27.77</span>
+                  </td>
                 </tr>
                 <tr>
-                  <td>GPT-5 Pro</td>
-                  <td>63/198</td>
-                  <td>31.77</td>
+                  <td class="model-1">GPT-5 Pro</td>
+                  <td class="data-cell">
+                    <span class="cell-value">63/198</span>
+                  </td>
+                  <td class="data-cell">
+                    <div class="progress-bar-1" style="width: 31.77%;"></div>
+                    <span class="cell-value">31.77</span>
+                  </td>
                 </tr>
                 <tr>
-                  <td>GPT-5 Thinking</td>
-                  <td>52/198</td>
-                  <td>26.16</td>
+                  <td class="model-1">GPT-5 Thinking</td>
+                  <td class="data-cell">
+                    <span class="cell-value">52/198</span>
+                  </td>
+                  <td class="data-cell">
+                    <div class="progress-bar-1" style="width: 26.16%;"></div>
+                    <span class="cell-value">26.16</span>
+                  </td>
                 </tr>
                 <tr>
-                  <td>GPT-5 Thinking (quick)</td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <!-- LLMs without thinking -->
-                
-                <tr>
-                  <td rowspan="4">Web-Search</td>
-                  <td>GPT-5 Web Search</td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>GPT-5 Pro Web Search</td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>GPT-5 Thinking Web Search</td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>GPT-5 Thinking (quick) Web Search</td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td rowspan="2">Agent</td>
-                  <td>ChatGPT Agent</td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>Deep Research</td>
-                  <td></td>
-                  <td></td>
+                  <td class="model-1">GPT-5 Thinking (quick)</td>
+                  <td class="data-cell">
+                    <span class="cell-value">-</span>
+                  </td>
+                  <td class="data-cell">
+                    <div class="progress-bar-1" style="width: 0%;"></div>
+                    <span class="cell-value">-</span>
+                  </td>
                 </tr>
                 
+                <!-- Web-Search Group -->
+                <tr class="group-2">
+                  <td rowspan="4" class="has-text-weight-bold" style="text-align: center; vertical-align: middle;">Web-Search</td>
+                  <td class="model-2">GPT-5 Web Search</td>
+                  <td class="data-cell">
+                    <span class="cell-value">-</span>
+                  </td>
+                  <td class="data-cell">
+                    <div class="progress-bar-2" style="width: 0%;"></div>
+                    <span class="cell-value">-</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="model-2">GPT-5 Pro Web Search</td>
+                  <td class="data-cell">
+                    <span class="cell-value">-</span>
+                  </td>
+                  <td class="data-cell">
+                    <div class="progress-bar-2" style="width: 0%;"></div>
+                    <span class="cell-value">-</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="model-2">GPT-5 Thinking Web Search</td>
+                  <td class="data-cell">
+                    <span class="cell-value">-</span>
+                  </td>
+                  <td class="data-cell">
+                    <div class="progress-bar-2" style="width: 0%;"></div>
+                    <span class="cell-value">-</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="model-2">GPT-5 Thinking (quick) Web Search</td>
+                  <td class="data-cell">
+                    <span class="cell-value">-</span>
+                  </td>
+                  <td class="data-cell">
+                    <div class="progress-bar-2" style="width: 0%;"></div>
+                    <span class="cell-value">-</span>
+                  </td>
+                </tr>
                 
-                
-                
+                <!-- Agent Group -->
+                <tr class="group-3">
+                  <td rowspan="2" class="has-text-weight-bold" style="text-align: center; vertical-align: middle;">Agent</td>
+                  <td class="model-3">ChatGPT Agent</td>
+                  <td class="data-cell">
+                    <span class="cell-value">-</span>
+                  </td>
+                  <td class="data-cell">
+                    <div class="progress-bar-3" style="width: 0%;"></div>
+                    <span class="cell-value">-</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="model-3">Deep Research</td>
+                  <td class="data-cell">
+                    <span class="cell-value">-</span>
+                  </td>
+                  <td class="data-cell">
+                    <div class="progress-bar-3" style="width: 0%;"></div>
+                    <span class="cell-value">-</span>
+                  </td>
+                </tr>
               </tbody>
             </table>
           </div>
