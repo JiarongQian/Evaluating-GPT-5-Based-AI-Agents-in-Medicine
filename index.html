@@ -25,7 +25,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Evaluating GPT-5-Based AI Agents in Medicine</title>
+  <title>Medical Agent Benchmark: Evaluating GPT-5-Based AI Agents in Medicine</title>
   <link rel="icon" type="image/x-icon" href="static/images/logo.">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
@@ -54,13 +54,15 @@
           <div class="column has-text-centered">
             <img src="static/images/MedASI_logo.png" alt="MedASI Logo"
                  style="width: 450px; height: auto; vertical-align: middle; margin: 0 0 48px 0;">
-            <h2 class="title is-3 is-normal publication-title" style="font-weight: normal;">Evaluating GPT-5-Based AI Agents in Medicine</h2>
+            <h2 class="title is-3 is-normal publication-title" style="font-weight: normal;">Medical Agent Benchmark: Evaluating GPT-5-Based AI Agents in Medicine</h2>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">Zhiling Yan,</span>
               <span class="author-block">Jiarong Qian,</span>
               <span class="author-block">Shaohui Zhang,</span>
               <span class="author-block">Kai Zhang,</span>
+              <span class="author-block">Wei Liu,</span>
+              <span class="author-block">Quangzheng Li,</span>
               <span class="author-block">Lifang He,</span>
               <span class="author-block">Jing Huang,</span>
               <span class="author-block">Lichao Sun</span>
@@ -68,7 +70,7 @@
             </div>
 
             <div class="is-size-5 publication-authors">
-              <span class="author-block">Lehigh University, University of Pennsylvania<br>
+              <span class="author-block">Harvard Medical School/Massachusetts General Hospital,Mayo Clinic, Lehigh University, University of Pennsylvania<br>
             </div>
 
             <div class="column has-text-centered">
@@ -245,6 +247,7 @@
             <table id="leaderboard-table" class="table is-bordered is-fullwidth">
               <thead>
                 <tr>
+                  <th>Category</th>
                   <th>Model</th>
                   <th>Result</th>
                   <th>Accuracy (%)</th>
@@ -252,19 +255,20 @@
               </thead>
               <tbody>
                 <tr>
+                  <td rowspan="4">LLL</td>
                   <td>GPT-5</td>
                   <td>55/198</td>
                   <td>27.77</td>
                 </tr>
                 <tr>
-                  <td>GPT-5 Web Search</td>
-                  <td></td>
-                  <td></td>
+                  <td>GPT-5 Pro</td>
+                  <td>63/198</td>
+                  <td>31.77</td>
                 </tr>
                 <tr>
                   <td>GPT-5 Thinking</td>
-                  <td></td>
-                  <td></td>
+                  <td>52/198</td>
+                  <td>26.16</td>
                 </tr>
                 <tr>
                   <td>GPT-5 Thinking (quick)</td>
@@ -273,6 +277,17 @@
                 </tr>
                 <!-- LLMs without thinking -->
                 
+                <tr>
+                  <td rowspan="4">Web-Search</td>
+                  <td>GPT-5 Web Search</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>GPT-5 Pro Web Search</td>
+                  <td></td>
+                  <td></td>
+                </tr>
                 <tr>
                   <td>GPT-5 Thinking Web Search</td>
                   <td></td>
@@ -284,16 +299,7 @@
                   <td></td>
                 </tr>
                 <tr>
-                  <td>GPT-5 Pro</td>
-                  <td>63/198</td>
-                  <td>31.77</td>
-                </tr>
-                <tr>
-                  <td>GPT-5 Pro Web Search</td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
+                  <td rowspan="2">Agent</td>
                   <td>ChatGPT Agent</td>
                   <td></td>
                   <td></td>

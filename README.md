@@ -1,86 +1,118 @@
-<h1>
-  <span style="font-size: 2em; vertical-align: middle;">MedASI: Evaluating GPT-5-Based AI Agents in Medicine</span>
-</h1>
+# Medical Agent Benchmark: Evaluating GPT-5-Based AI Agents in Medicine
 
-## 👨‍💻 Authors
+## Overview
 
-Zhiling Yan, Jiarong Qian, Shaohui Zhang, Kai Zhang, Lifang He, Jing Huang, Lichao Sun  
-Lehigh University, University of Pennsylvania
+This project presents a comprehensive evaluation of GPT-5-based AI agents in medical diagnosis tasks. We systematically assess the performance of a hierarchy of OpenAI models and systems, from base large language models to autonomous agents, to understand the impact of incremental capabilities on clinical intelligence.
 
-## 🌟 Introduction
+## Authors
 
-MedASI evaluates GPT-5-based models and systems on medical diagnosis tasks. The homepage logo and title reflect the MedASI branding. The landing page包含：
+- **Zhiling Yan**
+- **Jiarong Qian** 
+- **Shaohui Zhang**
+- **Kai Zhang**
+- **Wei Liu**
+- **Quangzheng Li**
+- **Lifang He**
+- **Jing Huang**
+- **Lichao Sun**
 
-- Teaser figure：Overview of the Diagnosis dataset and model evaluation（198 cases，11 body systems，9 imaging modalities；对比不同 GPT-5/ChatGPT 配置对准确率的影响）。
-- Introduction 标题两侧的 `nurse (1).png` 与 `nurse.png` 图标。
-- Diagnosis Dataset 模块，包含两张数据集示例图的轮播。
-- Leaderboard 表格：仅保留三列（Model、Result、Accuracy (%)），行固定为 10 个模型配置。
+**Affiliations:** Harvard Medical School/Massachusetts General Hospital, Mayo Clinic, Lehigh University, University of Pennsylvania
 
-## 📊 Leaderboard（固定结构）
+## Introduction
 
-三列：
-- Model
-- Result（例如 `55/198`）
-- Accuracy (%)（例如 `27.77`）
+Large language models (LLMs) are increasingly being augmented with reasoning and tool-use capabilities, creating a spectrum of AI systems from simple chatbots to autonomous agents. This rapid evolution has fueled visions of Artificial Super Intelligence (ASI) revolutionizing medicine, yet the true gap between current systems and this future remains unquantified.
 
-当前展示的 10 个模型：
-1. GPT-5  
-2. GPT-5 Web Search  
-3. GPT-5 Thinking  
-4. GPT-5 Thinking (quick)  
-5. GPT-5 Thinking Web Search  
-6. GPT-5 Thinking (quick) Web Search  
-7. GPT-5 Pro  
-8. GPT-5 Pro Web Search  
-9. ChatGPT Agent  
-10. Deep Research
+Our analysis spans from the base large language model (e.g., GPT-5) to models enhanced with reasoning, web search, a deep research function, and a fully autonomous agent. We show that while augmenting models with external information tools improves data retrieval, it does not consistently translate to superior diagnostic accuracy and can introduce new error vectors.
 
-示例已填：
-- GPT-5: Result `55/198`，Accuracy `27.77`
-- GPT-5 Pro: Result `63/198`，Accuracy `31.77`
+This work provides a crucial benchmark of OpenAI's model ecosystem, establishing a rigorous methodology for evaluating the true clinical readiness of increasingly complex AI systems and guiding their responsible integration into healthcare.
 
-## 📦 Project Structure
+## Dataset
+
+We evaluate on **HealthBench**, a publicly available benchmark introduced by OpenAI for Human Health tasks. The dataset contains 198 diagnosis cases distributed across 11 body systems:
+
+- **Cardiovascular**: 40 cases
+- **Digestive**: 35 cases  
+- **Respiratory**: 34 cases
+- **Skeletal**: 31 cases
+- **Nervous**: 22 cases
+- **Reproductive**: 9 cases
+- **Endocrine**: 9 cases
+- **Integumentary**: 7 cases
+- **Lymphatic**: 5 cases
+- **Muscular**: 4 cases
+- **Urinary**: 2 cases
+
+Each case has a unique identifier and an open-ended, reasoning-style diagnostic question paired with medical images spanning CT, MRI, X-ray, PET, pathology images, EEG/ECG recordings, charts, and real-world photographs, together with a clinically validated ground-truth diagnosis.
+
+## Leaderboard
+
+The following table shows the performance of different GPT-5 models on the diagnosis dataset:
+
+| Category | Model | Result | Accuracy (%) |
+|----------|-------|---------|--------------|
+| **LLL** | GPT-5 | 55/198 | 27.77 |
+| | GPT-5 Pro | 63/198 | 31.77 |
+| | GPT-5 Thinking | - | - |
+| | GPT-5 Thinking (quick) | - | - |
+| **Web-Search** | GPT-5 Web Search | - | - |
+| | GPT-5 Pro Web Search | - | - |
+| | GPT-5 Thinking Web Search | - | - |
+| | GPT-5 Thinking (quick) Web Search | - | - |
+| **Agent** | ChatGPT Agent | - | - |
+| | Deep Research | - | - |
+
+## Project Structure
 
 ```
-.
+GPT-5/
+├── index.html              # Main webpage
+├── README.md               # This file
 ├── static/
-│   ├── css/              # 样式（Bulma、自定义 index.css）
-│   ├── images/           # 图标与图片资源（含 MedASI_logo、nurse 图标等）
-│   ├── js/               # 轮播与交互（bulma-carousel、index.js）
-├── index.html            # 主页面
-├── README.md             # 本说明
+│   ├── css/               # Stylesheets
+│   ├── js/                # JavaScript files
+│   ├── images/            # Project images and icons
+│   └── pdfs/              # PDF documents
 ```
 
-## 🔗 Links
+## Features
 
-- Website: 可部署至 GitHub Pages 或 Hugging Face Spaces（静态站点，无需后端）
-- Paper: 待补（按钮已预留）
-- Code: 待补（按钮已预留）
+- **Interactive Image Carousel**: Dataset visualization with sliding images
+- **Responsive Design**: Built with Bulma CSS framework
+- **Modern UI**: Clean, professional interface for medical AI research
+- **Comprehensive Evaluation**: Systematic assessment of GPT-5 model hierarchy
 
-## 🚀 部署到 GitHub Pages
+## Deployment
 
-1) 新建仓库并推送：
-```
-git init
-git add .
-git commit -m "Initial site"
-git branch -M main
-git remote add origin https://github.com/<your-username>/<repo>.git
-git push -u origin main
-```
+This is a static HTML website that can be deployed to various platforms:
 
-2) 打开仓库 Settings → Pages：
-- Build and deployment: 选择 “Deploy from a branch”
-- Branch 选 `main`，Folder 选 `/ (root)`
-- 保存，几分钟后访问 `https://<your-username>.github.io/<repo>/`
+### GitHub Pages
+1. Push your code to a GitHub repository
+2. Go to Settings > Pages
+3. Select source branch (usually `main` or `master`)
+4. Your site will be available at `https://username.github.io/repository-name`
 
-## 🛠 技术栈
+### Alternative Platforms
+- **Vercel**: Drag and drop deployment
+- **Netlify**: Git-based deployment
+- **Hugging Face Spaces**: For ML/AI projects
+- **Cloudflare Pages**: Fast global deployment
 
-- Bulma + bulma-carousel/bulma-slider（静态轮播与样式）
-- jQuery（初始化轮播）
-- 纯前端静态站点，所有资源使用相对路径（`static/...`）
+## Technologies Used
 
-## 📄 License
+- **HTML5**: Semantic markup
+- **CSS3**: Styling with Bulma framework
+- **JavaScript**: Interactive features and carousel functionality
+- **Bulma**: Modern CSS framework for responsive design
 
-基于 Academic Project Page Template（Nerfies）修改，保留原模板声明。
+## Contributing
+
+This project evaluates the performance of AI models in medical diagnosis. For questions or contributions, please refer to the research methodology and evaluation criteria outlined in the main webpage.
+
+## License
+
+This project is for research and educational purposes. Please ensure compliance with relevant data privacy and medical research regulations when using the HealthBench dataset.
+
+---
+
+*This benchmark aims to establish a rigorous methodology for tracking progress and guiding the responsible development of AI towards a future of safe and reliable super-intelligence in medicine.*
 
