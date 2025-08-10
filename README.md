@@ -1,15 +1,20 @@
 <h1>
-  <span style="font-size: 2em; vertical-align: middle;">MedASI: Evaluating GPT-5-Based AI Agents in Medicine</span>
+  <span style="font-size: 2em; vertical-align: middle;">Medical Agent Benchmark: Evaluating GPT-5-Based AI Agents in Medicine</span>
 </h1>
 
 ## 👨‍💻 Authors
 
-Zhiling Yan, Jiarong Qian, Shaohui Zhang, Kai Zhang, Lifang He, Jing Huang, Lichao Sun  
-Lehigh University, University of Pennsylvania
+Zhiling Yan, Jiarong Qian, Shaohui Zhang, Kai Zhang, Wei Liu, Quanzheng Li, Lifang He, Jing Huang, Lichao Sun  
+Lehigh University, 
+University of Pennsylvania,
+Harvard Medical School,
+Massachusetts General Hospital,
+Mayo Clinic
+
 
 ## 🌟 Introduction
 
-MedASI evaluates GPT-5-based models and systems on medical diagnosis tasks. The homepage logo and title reflect the MedASI branding. The landing page包含：
+MedABench evaluates GPT-5-based models and systems on medical diagnosis tasks. The homepage logo and title reflect the MedASI branding. The landing page包含：
 
 - Teaser figure：Overview of the Diagnosis dataset and model evaluation（198 cases，11 body systems，9 imaging modalities；对比不同 GPT-5/ChatGPT 配置对准确率的影响）。
 - Introduction 标题两侧的 `nurse (1).png` 与 `nurse.png` 图标。
