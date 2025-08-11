@@ -4,6 +4,9 @@
 
 This project presents a comprehensive evaluation of GPT-5-based AI agents in medical diagnosis tasks. We systematically assess the performance of a hierarchy of OpenAI models and systems, from base large language models to autonomous agents, to understand the impact of incremental capabilities on clinical intelligence.
 
+## Main Page
+https://JiarongQian.github.io/AgentMed
+
 ## Authors
 
 - **Shaohui Zhang** - University of Pennsylvania
