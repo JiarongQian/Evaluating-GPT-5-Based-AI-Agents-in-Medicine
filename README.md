@@ -93,7 +93,7 @@ The following table shows the performance of different GPT-5 models on the diagn
 
 **Ground Truth:** Sarcoidosis
 
-**Image:** <img src="static/images/MM-651.jpg" width="500">
+**Image:** <img src="static\images\MM-651-1.png" width="500">
 
 | Model | Analysis | Score |
 |-------|----------|-------|
@@ -114,7 +114,7 @@ The following table shows the performance of different GPT-5 models on the diagn
 
 **Ground Truth:** Cholesterol emboli
 
-**Image:** <img src="static/images/MM-1764.jpg" width="200">
+**Image:** <img src="static\images\MM-1764-1.png" width="200">
 
 | Model | Analysis | Score |
 |-------|----------|-------|
