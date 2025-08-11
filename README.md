@@ -13,6 +13,7 @@ https://JiarongQian.github.io/AgentMed
 - **Jiarong Qian** - University of Pennsylvania
 - **Zhiling Yan** - Lehigh University
 - **Kai Zhang** - Lehigh University
+- **Yonghui Wu** - University of Florida
 - **Wei Liu** - Mayo Clinic
 - **Quangzheng Li** - Lehigh University
 - **Xiang Li** - MGH/Harvard Medical School
@@ -20,7 +21,7 @@ https://JiarongQian.github.io/AgentMed
 - **Jing Huang** - University of Pennsylvania
 - **Lichao Sun** - Lehigh University
 
-**Affiliations:** Lehigh University, University of Pennsylvania, Mayo Clinic, Harvard Medical School, Massachusetts General Hospital
+**Affiliations:** Lehigh University, University of Pennsylvania, Mayo Clinic, Harvard Medical School, Massachusetts General Hospital, University of Florida
 
 ## Introduction
 
@@ -158,7 +159,7 @@ If you use this project in your research, please cite:
 ```bibtex
 @inproceedings{tie2025mmmr,
   title={TOWARDS ARTIFICIAL SUPER INTELLIGENCE IN HEALTHCARE: EVALUATING GPT-5-BASED AI AGENTS IN MEDICINE},
-  author={Shaohui Zhang, Jiarong Qian, Zhiling Yan, Kai Zhang, Lifang He, Jing Huang, Lichao Sun},
+  author={Shaohui Zhang, Jiarong Qian, Zhiling Yan, Kai Zhang, Yonghui Wu, Wei Liu, Lifang He, Jing Huang, Lichao Sun},
   booktitle={},
   year={2025},
 }
