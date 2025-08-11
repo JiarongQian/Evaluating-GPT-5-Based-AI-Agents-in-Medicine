@@ -1,4 +1,4 @@
-# AgentMed: Evaluating GPT-5-Based AI Agents in Medicine
+# AgentMed: Evaluating GPT-5 AI Agents in Medicine
 
 ## Overview
 
