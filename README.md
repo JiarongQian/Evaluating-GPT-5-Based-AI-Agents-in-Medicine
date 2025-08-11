@@ -1,4 +1,4 @@
-# Medical Agent Benchmark: Evaluating GPT-5-Based AI Agents in Medicine
+# AgentMed: Evaluating GPT-5-Based AI Agents in Medicine
 
 ## Overview
 
@@ -6,9 +6,9 @@ This project presents a comprehensive evaluation of GPT-5-based AI agents in med
 
 ## Authors
 
-- **Zhiling Yan** - Lehigh University
-- **Jiarong Qian** -
 - **Shaohui Zhang** - University of Pennsylvania
+- **Jiarong Qian** - University of Pennsylvania
+- **Zhiling Yan** - Lehigh University
 - **Kai Zhang** - Lehigh University
 - **Wei Liu** - Mayo Clinic
 - **Quangzheng Li** - Lehigh University
@@ -31,7 +31,7 @@ This work provides a crucial benchmark of OpenAI's model ecosystem, establishing
 
 ## Dataset
 
-We evaluate on **MedXpertQA**, a publicly available benchmark introduced for Human Health tasks. The dataset contains 198 diagnosis cases distributed across 11 body systems:
+Our dataset is derived from **MedXpertQA**, a publicly available benchmark introduced for Human Health tasks. The dataset contains 198 diagnosis cases distributed across 11 body systems:
 
 - **Cardiovascular**: 40 cases
 - **Digestive**: 35 cases  
@@ -47,71 +47,85 @@ We evaluate on **MedXpertQA**, a publicly available benchmark introduced for Hum
 
 Each case has a unique identifier and an open-ended, reasoning-style diagnostic question paired with medical images spanning CT, MRI, X-ray, PET, pathology images, EEG/ECG recordings, charts, and real-world photographs, together with a clinically validated ground-truth diagnosis.
 
-## Key Findings
-
-Our evaluation shows that while augmenting models with external information tools improves data retrieval, this does not consistently translate to superior diagnostic accuracy. GPT-5 Pro performs best in the base LLM category with an accuracy of 31.77%.
-
 ## Leaderboard
 
 The following table shows the performance of different GPT-5 models on the diagnosis dataset:
 
 | Category | Model | Result | Accuracy (%) |
 |----------|-------|---------|--------------|
-| **LLM** | GPT-5 | 55/198 | 27.77 |
+| **LLM** | GPT-5 | 55/198 | 27.78 |
 | | GPT-5 Thinking | 55/198 | 27.78 |
 | | GPT-5 Thinking (quick) | 52/198 | 26.26 |
-| | GPT-5 Pro | 63/198 | 31.77 |
+| | GPT-5 Pro | 62/198 | 31.31 |
 | **Web-Search** | GPT-5 Web Search | - | - |
-| | GPT-5 Thinking Web Search | - | - |
+| | GPT-5 Thinking Web Search | 65/198 | 32.83 |
 | | GPT-5 Thinking (quick) Web Search | - | - |
-| | GPT-5 Pro Web Search | 78/198|40.30 |
-| **Agent** | ChatGPT Agent | - | - |
+| | GPT-5 Pro Web Search | 78/198 | 39.39 |
+| **Agent** | ChatGPT Agent | 34/102 | 33.33 |
 | | Deep Research | - | - |
 
-## Project Structure
+## Demos
 
-```
-GPT-5/
-├── index.html              # Main webpage
-├── README.md               # This file
-├── static/
-│   ├── css/               # Stylesheets
-│   │   ├── bulma.min.css  # Bulma CSS framework
-│   │   ├── bulma-carousel.min.css  # Carousel styles
-│   │   ├── bulma-slider.min.css    # Slider styles
-│   │   ├── fontawesome.all.min.css # Icon styles
-│   │   └── index.css      # Custom styles
-│   ├── js/                # JavaScript files
-│   │   ├── bulma-carousel.js  # Carousel functionality
-│   │   ├── bulma-slider.js    # Slider functionality
-│   │   ├── fontawesome.all.min.js # Icon functionality
-│   │   └── index.js       # Main JavaScript logic
-│   ├── images/            # Project images and icons
-│   │   ├── MedABench_logo.png  # MedABench logo
-│   │   ├── LOGO.png           # Project logo
-│   │   ├── overview.jpg       # Overview image
-│   │   ├── dataset_1.jpg      # Dataset example 1
-│   │   ├── dataset_2.jpg      # Dataset example 2
-│   │   ├── leaderboard.png    # Leaderboard icon
-│   │   ├── data.png           # Data icon
-│   │   ├── hospital.png       # Hospital icon
-│   │   └── nurse.png          # Nurse icon
-│   └── pdfs/              # PDF documents
-│       └── sample.pdf     # Sample PDF
-```
+### Case MM-94: Lumbar Spine MRI
 
-## Features
+**Question:** A 60-year-old man presents with radicular pain in the right leg, accompanied by weakness in the hip abductors and extensor hallucis longus (EHL). MRI images are provided in Figures A-C. What is the underlying cause of this patient's symptoms?
 
-- **Interactive Image Carousel**: Dataset visualization with sliding images
-- **Responsive Design**: Built with Bulma CSS framework
-- **Modern UI**: Clean, professional interface for medical AI research
-- **Comprehensive Evaluation**: Systematic assessment of GPT-5 model hierarchy
-- **Professional Table Design**: Color-coded groups with progress bar visualization
-- **Multi-modal Support**: Support for various medical image formats including CT, MRI, X-ray, and more
+**Ground Truth:** Facet synovial cyst
 
-## Deployment
+**Images:** <img src="static/images/MM-94-1.png" width="100"><img src="static/images/MM-94-2.png" width="100"><img src="static/images/MM-94-3.png" width="100">
 
-This is a static HTML website that can be deployed to various platforms:
+| Model | Analysis | Score |
+|-------|----------|-------|
+| **GPT-5** | The MRI images show a right-sided herniated disc at the L4–L5 level:<br/>• Sagittal T2-weighted MRI shows loss of disc height and focal protrusion<br/>• Axial MRI confirms herniated disc material compressing the right L5 nerve root<br/><br/>**Underlying cause:** Right posterolateral L4–L5 intervertebral disc herniation causing L5 radiculopathy. | 0 |
+| **GPT-5 Web Search** | Clinical presentation strongly implicates L5 nerve root compression. MRI shows protrusion of intervertebral disc material at L4–L5 level extending into neural foramen, likely impinging on L5 nerve root.<br/><br/>**Conclusion:** L4–L5 disc herniation compressing L5 nerve root. | 0 |
+| **GPT-5 Thinking** | **Right L5 radiculopathy from L4–L5 facet synovial cyst compressing the traversing L5 root.**<br/>MRI shows T2-bright extradural cyst adjacent to facet joint causing lateral recess stenosis—typical of degenerative synovial cyst. | 1 |
+| **GPT-5 Thinking (Quick)** | **Right-sided L4-L5 disc herniation** causing compression of right L5 nerve root within lateral recess.<br/>**Final Diagnosis:** Right L4-L5 posterolateral disc herniation compressing right L5 nerve root. | 0 |
+| **GPT-5 Pro** | **L5 radiculopathy from right L4–5 juxtafacet synovial cyst.**<br/>MRI shows fluid-filled facet joints and T2 bright extradural cyst projecting medially, narrowing lateral recess and compressing traversing L5 root. | 1 |
+| **GPT-5 Pro Web Search** | Exam localizes to L5 radiculopathy. MRI shows degenerative narrowing at L4–5 with facet arthropathy and joint fluid, producing lateral recess stenosis that compresses traversing right L5 nerve root. | 0 |
+| **GPT-5 Thinking Web Search** | **Right L5 radiculopathy from L4–L5 facet-joint synovial cyst compressing traversing L5 root.**<br/>Exam fits L5 root: weakness of EHL and hip abductors is classic for L5 radiculopathy. | 1 |
+| **GPT-5 ChatGPT Agent** | Weakness in hip abductors and EHL = L5 radiculopathy. MRI shows fluid-intensity lesion at L4–L5 facet joint compressing L5 root. Characteristic of degenerative synovial cyst, not disc herniation. | 1 |
+
+---
+
+### Case MM-651: ECG Analysis
+
+**Question:** A 33-year-old female presents with dyspnea for 5 years, palpitations, chronic cough, dry skin, hair thinning, and lower extremity edema. ECG shows bradycardia. What is the most likely diagnosis?
+
+**Ground Truth:** Sarcoidosis
+
+**Image:** <img src="static/images/MM-651.jpg" width="500">
+
+| Model | Analysis | Score |
+|-------|----------|-------|
+| **GPT-5** | ECG shows sinus bradycardia with low voltage QRS complexes. Clinical presentation suggests **hypothyroidism with pericardial effusion**.<br/>**Key features:** Sinus bradycardia, low QRS voltage, dry skin, hair thinning, edema. | 0 |
+| **GPT-5 Web Search** | Clinical presentation highly suggestive of **hypothyroidism**, most likely long-standing and severe. ECG shows sinus bradycardia, low-voltage QRS complexes, and T-wave flattening. | 0 |
+| **GPT-5 Thinking** | **Primary hypothyroidism with large pericardial effusion.**<br/>She has dry skin, hair loss, edema, and marked sinus bradycardia. ECG shows low-voltage complexes consistent with pericardial effusion. | 0 |
+| **GPT-5 Thinking (Quick)** | ECG shows **sinus bradycardia** with low-voltage QRS complexes. Presentation consistent with **severe hypothyroidism (myxedema)** complicated by **large pericardial effusion**. | 0 |
+| **GPT-5 Pro** | **Atrial flutter with slow ventricular response (high degree AV block).**<br/>ECG shows classic saw tooth flutter waves with ventricular rate ≈50/min, explaining palpitations and dyspnea. | 0 |
+| **GPT-5 Pro Web Search** | **Atrial flutter with high degree AV block (≈5:1–6:1).**<br/>ECG shows continuous flutter waves with high AV conduction ratio, giving ventricular rate near 50/min. | 0 |
+| **GPT-5 Thinking Web Search** | **Severe hypothyroidism with pericardial effusion ("myxedema heart").**<br/>Exam fits hypothyroidism; hypothyroidism commonly causes slowed heart rate and low-voltage ECG changes. | 0 |
+| **GPT-5 ChatGPT Agent** | ECG demonstrates sinus bradycardia. Patient shows classic features of long-standing hypothyroidism. Most likely diagnosis is **severe hypothyroidism, likely with pericardial effusion** causing respiratory symptoms. | 0 |
+
+---
+
+### Case MM-1764: Fundus Photography
+
+**Question:** This patient reports experiencing transient, painless visual obscuration in the left eye. What is the most likely diagnosis?
+
+**Ground Truth:** Cholesterol emboli
+
+**Image:** <img src="static/images/MM-1764.jpg" width="200">
+
+| Model | Analysis | Score |
+|-------|----------|-------|
+| **GPT-5** | Fundus shows multiple bright, reflective lesions along retinal arterioles, consistent with **Hollenhorst plaques**—cholesterol emboli from ipsilateral carotid artery.<br/>**Diagnosis:** Amaurosis fugax due to retinal artery embolism from carotid atherosclerotic plaque. | 1 |
+| **GPT-5 Web Search** | Fundus shows numerous small yellowish flecks clustered in macular region—consistent with **drusen**, suggesting early age-related macular degeneration (AMD).<br/>**Diagnosis:** Early Age-Related Macular Degeneration (Dry AMD). | 1 |
+| **GPT-5 Thinking** | **Central retinal artery occlusion (CRAO).**<br/>Fundus shows pale retina with cherry-red spot at macula, characteristic of CRAO, associated with transient monocular visual loss. | 0 |
+| **GPT-5 Thinking (Quick)** | Retinal image shows **multiple yellowish refractile deposits** consistent with **Hollenhorst plaques** (cholesterol emboli).<br/>**Diagnosis:** Retinal cholesterol embolism secondary to carotid artery atherosclerosis. | 1 |
+| **GPT-5 Pro** | **Retinal cholesterol embolus (Hollenhorst plaque) causing amaurosis fugax.**<br/>Fundus shows bright, refractile yellow plaque lodged in retinal arteriole near optic disc. | 1 |
+| **GPT-5 Pro Web Search** | **Hollenhorst plaque causing amaurosis fugax.**<br/>Fundus shows small, bright, yellow, refractile deposits lodged in retinal arterioles—classical for Hollenhorst plaques. | 1 |
+| **GPT-5 Thinking Web Search** | **Hollenhorst plaque causing amaurosis fugax.**<br/>Fundus shows small, bright, refractile yellow embolus lodged at arteriole bifurcation—typical of Hollenhorst plaque. | 1 |
+| **GPT-5 ChatGPT Agent** | Fundus shows small, bright yellow–white refractile deposit lodged within retinal arteriole near optic disc. Such plaques consist of cholesterol crystals that embolize from proximal atherosclerotic lesions. | 1 |
 
 ### GitHub Pages
 1. Push your code to a GitHub repository
@@ -141,7 +155,7 @@ If you use this project in your research, please cite:
 ```bibtex
 @inproceedings{tie2025mmmr,
   title={TOWARDS ARTIFICIAL SUPER INTELLIGENCE IN HEALTHCARE: EVALUATING GPT-5-BASED AI AGENTS IN MEDICINE},
-  author={Zhiling Yan, Jiarong Qian, Shaohui Zhang, Kai Zhang, Lifang He, Jing Huang, Lichao Sun},
+  author={Shaohui Zhang, Jiarong Qian, Zhiling Yan, Kai Zhang, Lifang He, Jing Huang, Lichao Sun},
   booktitle={},
   year={2025},
 }
@@ -149,7 +163,7 @@ If you use this project in your research, please cite:
 
 ## Contributing
 
-This project evaluates the performance of AI models in medical diagnosis. For questions or contributions, please refer to the research methodology and evaluation criteria outlined in the main webpage.
+This project evaluates the performance of  AI models from ChatGPT in medical diagnosis. For questions or contributions, please refer to the research methodology and evaluation criteria outlined in the main webpage.
 
 ## License
 

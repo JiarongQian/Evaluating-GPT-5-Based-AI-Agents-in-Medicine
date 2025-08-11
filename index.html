@@ -25,7 +25,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Medical Agent Benchmark: Evaluating GPT-5-Based AI Agents in Medicine</title>
+  <title>AgentMed: Evaluating GPT-5-Based AI Agents in Medicine</title>
   <link rel="icon" type="image/x-icon" href="static/images/logo.">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
@@ -53,17 +53,18 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <div style="position: relative; display: flex; justify-content: center; align-items: center; margin-bottom: 48px;">
-              <img src="static\images\MedABench_logo.png" alt="MedABench Logo"
+              <img src="static\images\AgentMed_logo.png" alt="MedABench Logo"
                    style="width: 450px; height: auto; vertical-align: middle;">
               <img src="static\images\LOGO.png" alt="Project Logo"
                    style="position: absolute; left: calc(50% - 350px); width: 180px; height: auto; vertical-align: middle;">
             </div>
-            <h2 class="title is-3 is-normal publication-title" style="font-weight: normal;">Medical Agent Benchmark: Evaluating GPT-5-Based AI Agents in Medicine</h2>
+            <h2 class="title is-3 is-normal publication-title" style="font-weight: normal;">AgentMed: Evaluating GPT-5-Based AI Agents in Medicine</h2>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
-              <span class="author-block">Zhiling Yan,</span>
-              <span class="author-block">Jiarong Qian,</span>
+              
               <span class="author-block">Shaohui Zhang,</span>
+              <span class="author-block">Jiarong Qian,</span>
+              <span class="author-block">Zhiling Yan,</span>
               <span class="author-block">Kai Zhang,</span>
               <span class="author-block">Wei Liu,</span>
               <span class="author-block">Quangzheng Li,</span>
@@ -95,7 +96,7 @@
 
                 <!-- Github link -->
                 <span class="link-block">
-                  <a href="https://" target="_blank"
+                  <a href="https://github.com/JiarongQian/AgentMed" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -267,8 +268,8 @@
                     <span class="cell-value">55/198</span>
                   </td>
                   <td class="data-cell">
-                    <div class="progress-bar-1" style="width: 27.77%;"></div>
-                    <span class="cell-value">27.77</span>
+                    <div class="progress-bar-1" style="width: 27.78%;"></div>
+                    <span class="cell-value">27.78</span>
                   </td>
                 </tr>
                 <tr>
@@ -277,7 +278,7 @@
                     <span class="cell-value">55/198</span>
                   </td>
                   <td class="data-cell">
-                    <div class="progress-bar-1" style="width: 31.77%;"></div>
+                    <div class="progress-bar-1" style="width: 27.78%;"></div>
                     <span class="cell-value">27.78</span>
                   </td>
                 </tr>
@@ -294,11 +295,11 @@
                 <tr>
                   <td class="model-1">GPT-5 Pro</td>
                   <td class="data-cell">
-                    <span class="cell-value"> 63/198</span>
+                    <span class="cell-value"> 62/198</span>
                   </td>
                   <td class="data-cell">
-                    <div class="progress-bar-1" style="width: 26.77%;"></div>
-                    <span class="cell-value"> 31.77</span>
+                    <div class="progress-bar-1" style="width: 31.31%;"></div>
+                    <span class="cell-value">31.31</span>
                   </td>
                 </tr>
                 
@@ -317,11 +318,11 @@
                 <tr>
                   <td class="model-2">GPT-5 Thinking Web Search</td>
                   <td class="data-cell">
-                    <span class="cell-value">-</span>
+                    <span class="cell-value">65/198</span>
                   </td>
                   <td class="data-cell">
-                    <div class="progress-bar-2" style="width: 0%;"></div>
-                    <span class="cell-value">-</span>
+                    <div class="progress-bar-2" style="width: 32.83%;"></div>
+                    <span class="cell-value">32.83</span>
                   </td>
                 </tr>
                 <tr>
@@ -341,7 +342,7 @@
                   </td>
                   <td class="data-cell">
                     <div class="progress-bar-2" style="width: 40.30%;"></div>
-                    <span class="cell-value">40.30</span>
+                    <span class="cell-value">39.39</span>
                   </td>
                 </tr>
                 
@@ -350,11 +351,11 @@
                   <td rowspan="2" class="has-text-weight-bold" style="text-align: center; vertical-align: middle;">Agent</td>
                   <td class="model-3">ChatGPT Agent</td>
                   <td class="data-cell">
-                    <span class="cell-value">-</span>
+                    <span class="cell-value">34/102</span>
                   </td>
                   <td class="data-cell">
-                    <div class="progress-bar-3" style="width: 0%;"></div>
-                    <span class="cell-value">-</span>
+                    <div class="progress-bar-3" style="width: 33.33%;"></div>
+                    <span class="cell-value">33.33</span>
                   </td>
                 </tr>
                 <tr>
@@ -380,199 +381,26 @@
 
 
 
-  <section class="hero is-small">
-    <div class="hero-body">
-      <div class="container">
-
         <!-- Image carousel -->
         <h2 class="title is-3" style="text-align: center;">
-          <span style="vertical-align: middle;">Statistics</span>
-        </h2>
-        <div id="results-carousel" class="carousel results-carousel">
-          <div class="item">
-            <!-- Your image here -->
-            <img src="static/images/data_summary.png" alt="Figure 3: Data Summary." />
-            <h2 class="subtitle has-text-centered">
-              Figure 3: Data Summary.
-            </h2>
-          </div>
-          <div class="item">
-            <!-- Your image here -->
-            <img src="static/images/comparison.png"
-              alt="Figure 4: Comparison of representative multi-modal reasoning datasets." />
-            <h2 class="subtitle has-text-centered">
-              Figure 4: Comparison of representative multi-modal reasoning datasets.
-            </h2>
-          </div>
-          <div class="item">
-            <!-- Your image here -->
-            <img src="static/images/statistics.png" alt="Figure 5: Statistical overview of MMMR dataset." />
-            <h2 class="subtitle has-text-centered">
-              Figure 5: Statistical overview of MMMR dataset.
-            </h2>
-          </div>
-        </div>
-        <!-- Image carousel -->
-        <h2 class="title is-3" style="text-align: center;">
-          <br>
           <span style="vertical-align: middle;" id="Examples">Examples</span>
         </h2>
         <div id="results-carousel2" class="carousel results-carousel results-carousel2">
           <div class="item">
-            <!-- Your image here -->
-            <img src="static/images/logic-1.png" alt="Figure 6: Logic: Thinking Case" />
+            <!-- MM-94 Case Study Image 1 -->
+            <img src="static/images/MM-94_1.jpg" alt="Figure 1: MM-94" />
             <h2 class="subtitle has-text-centered">
-              Figure 6: Logic: Thinking Case
+              Figure 1: MM-94
             </h2>
           </div>
           <div class="item">
-            <!-- Your image here -->
-            <img src="static/images/logic-2.png" alt="Figure 7: 3D Logic: Non-Thinking Case" />
+            <!-- MM-94 Case Study Image 2 -->
+            <img src="static/images/MM-94_2.jpg" alt="Figure 2: MM-94" style="max-width: 65%; height: auto;" />
             <h2 class="subtitle has-text-centered">
-              Figure 7: Logic: Non-Thinking Case
+              Figure 2: MM-94
             </h2>
           </div>
-           <div class="item">
-            <!-- Your image here -->
-            <img src="static/images/logic-3.png" alt="Figure 8: 2D Logic: Non-Thinking Case" />
-            <h2 class="subtitle has-text-centered">
-              Figure 8: Logic: Non-Thinking Case
-            </h2>
-          </div>
-          <div class="item">
-            <!-- Your image here -->
-            <img src="static/images/math-1.png" alt="Figure 9: Math: Thinking Case" />
-            <h2 class="subtitle has-text-centered">
-              Figure 9: Math: Thinking Case
-            </h2>
-          </div>
-          <div class="item">
-            <!-- Your image here -->
-            <img src="static/images/math-2.png" alt="Figure 10: Math: Non-Thinking Case" />
-            <h2 class="subtitle has-text-centered">
-              Figure 10: Math: Non-Thinking Case
-            </h2>
-          </div>
-          <div class="item">
-            <!-- Your image here -->
-            <img src="static/images/math-3.png" alt="Figure 11: Math: Non-Thinking Case" />
-            <h2 class="subtitle has-text-centered">
-              Figure 11: Math: Non-Thinking Case
-            </h2>
-          </div>
-           <div class="item">
-            <!-- Your image here -->
-            <img src="static/images/math-4.png" alt="Figure 12: Math: Non-Thinking Case" />
-            <h2 class="subtitle has-text-centered">
-              Figure 12: Math: Non-Thinking Case
-            </h2>
-          </div>
-           <div class="item">
-            <!-- Your image here -->
-            <img src="static/images/math-5.png" alt="Figure 13: Math: Non-Thinking Case" />
-            <h2 class="subtitle has-text-centered">
-              Figure 13: Math: Non-Thinking Case
-            </h2>
-          </div>
-          <div class="item">
-            <!-- Your image here -->
-            <img src="static/images/space-time-1.png" alt="Figure 14: Space Reasoning: Thinking Case" />
-            <h2 class="subtitle has-text-centered">
-              Figure 14: Space Reasoning: Thinking Case
-            </h2>
-          </div>
-           <div class="item">
-            <!-- Your image here -->
-            <img src="static/images/space-time-2.png" alt="Figure 15: Space Reasoning: Non-Thinking Case" />
-            <h2 class="subtitle has-text-centered">
-              Figure 15: Space Reasoning: Non-Thinking Case
-            </h2>
-          </div>
-           <div class="item">
-            <!-- Your image here -->
-            <img src="static/images/space-time-3.png" alt="Figure 16: Space Reasoning: Non-Thinking Case" />
-            <h2 class="subtitle has-text-centered">
-              Figure 16: Space Reasoning: Non-Thinking Case
-            </h2>
-          </div>
-          <div class="item">
-            <!-- Your image here -->
-            <img src="static/images/science-1.png" alt="Figure 17: Science: Thinking Case" />
-            <h2 class="subtitle has-text-centered">
-              Figure 17: Science: Thinking Case
-            </h2>
-          </div>
-          <div class="item">
-            <!-- Your image here -->
-            <img src="static/images/science-2.png" alt="Figure 18: Science: Non-Thinking Case" />
-            <h2 class="subtitle has-text-centered">
-              Figure 18: Science: Non-Thinking Case
-            </h2>
-          </div>
-          <div class="item">
-            <!-- Your image here -->
-            <img src="static/images/science-3.png" alt="Figure 19: Science: Non-Thinking Case" />
-            <h2 class="subtitle has-text-centered">
-              Figure 19: Science: Non-Thinking Case
-            </h2>
-          </div>
-          <div class="item">
-            <!-- Your image here -->
-            <img src="static/images/science-4.png" alt="Figure 20: Science: Non-Thinking Case" />
-            <h2 class="subtitle has-text-centered">
-              Figure 20: Science: Non-Thinking Case
-            </h2>
-          </div>
-          <div class="item">
-            <!-- Your image here -->
-            <img src="static/images/science-5.png" alt="Figure 21: Science: Non-Thinking Case" />
-            <h2 class="subtitle has-text-centered">
-              Figure 21: Science: Non-Thinking Case
-            </h2>
-          </div>
-          <div class="item">
-            <!-- Your image here -->
-            <img src="static/images/code-1.png" alt="Figure 22: Code: Thinking Case" />
-            <h2 class="subtitle has-text-centered">
-              Figure 22: Code: Thinking Case
-            </h2>
-          </div>
-          <div class="item">
-            <!-- Your image here -->
-            <img src="static/images/code-2.png" alt="Figure 23: Code: Non-Thinking Case" />
-            <h2 class="subtitle has-text-centered">
-              Figure 23: Code: Non-Thinking Case
-            </h2>
-          </div>
-           <div class="item">
-            <!-- Your image here -->
-            <img src="static/images/code-3.png" alt="Figure 24: Code: Non-Thinking Case" />
-            <h2 class="subtitle has-text-centered">
-              Figure 24: Code: Non-Thinking Case
-            </h2>
-          </div>
-           <div class="item">
-            <!-- Your image here -->
-            <img src="static/images/map-1.png" alt="Figure 25: Map: Thinking Case" />
-            <h2 class="subtitle has-text-centered">
-              Figure 25: Map: Thinking Case
-            </h2>
-          </div>
-            <div class="item">
-            <!-- Your image here -->
-            <img src="static/images/map-2.png" alt="Figure 26: Map: Non-Thinking Case" />
-            <h2 class="subtitle has-text-centered">
-              Figure 26: Map: Non-Thinking Case
-            </h2>
-          </div>
-            <div class="item">
-            <!-- Your image here -->
-            <img src="static/images/map-3.png" alt="Figure 27: Map: Non-Thinking Case" />
-            <h2 class="subtitle has-text-centered">
-              Figure 27: Map: Non-Thinking Case
-            </h2>
-          </div>
-      </div>
+        </div>
   </section>
   <!-- End image carousel -->
   <!-- End dataset -->
@@ -583,7 +411,7 @@
       <h2 class="title">BibTeX</h2>
       <pre><code>@inproceedings{2025_medabench,
   title={TOWARDS ARTIFICIAL SUPER INTELLIGENCE IN HEALTHCARE: EVALUATING GPT-5-BASED AI AGENTS IN MEDICINE},
-  author={Zhiling Yan，Jiarong Qian，Shaohui Zhang，Kai Zhang，Lifang He ，Jing Huang ，Lichao Sun},
+  author={Shaohui Zhang，Jiarong Qian，Zhiling Yan，Kai Zhang，Lifang He ，Jing Huang ，Lichao Sun},
   booktitle={},
   year={2025},
 }
