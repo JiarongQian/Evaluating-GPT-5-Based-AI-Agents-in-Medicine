@@ -157,8 +157,8 @@ The following table shows the performance of different GPT-5 models on the diagn
 If you use this project in your research, please cite:
 
 ```bibtex
-@inproceedings{tie2025mmmr,
-  title={TOWARDS ARTIFICIAL SUPER INTELLIGENCE IN HEALTHCARE: EVALUATING GPT-5-BASED AI AGENTS IN MEDICINE},
+@inproceedings{2025_AgentMed,
+  title={AgentMed: Evaluating GPT-5 AI Agents in Medicine},
   author={Shaohui Zhang, Jiarong Qian, Zhiling Yan, Kai Zhang, Yonghui Wu, Wei Liu, Lifang He, Jing Huang, Lichao Sun},
   booktitle={},
   year={2025},
