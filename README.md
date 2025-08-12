@@ -159,7 +159,7 @@ If you use this project in your research, please cite:
 ```bibtex
 @inproceedings{2025_AgentMed,
   title={AgentMed: Evaluating GPT-5 AI Agents in Medicine},
-  author={Shaohui Zhang, Jiarong Qian, Zhiling Yan, Kai Zhang, Yonghui Wu, Wei Liu, Lifang He, Jing Huang, Lichao Sun},
+  author={Shaohui Zhang,Jiarong Qian,Zhiling Yan,Kai Zhang,Yongfeng Wu,Wei Liu,Quangzheng Li,Xiang Li,Lifang He,Jing Huang,Lichao Sun},
   booktitle={},
   year={2025},
 }
