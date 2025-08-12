@@ -68,6 +68,16 @@ The following table shows the performance of different GPT-5 models on the diagn
 | **Agent** | ChatGPT Agent | 34/102 | 33.33 |
 | | Deep Research | - | - |
 
+
+The following table shows the performance of different 4o/o3 models on the diagnosis dataset:
+| Category | Model | Result | Accuracy (%) |
+|----------|-------|---------|--------------|
+| **Web-Search** | 4o Web Search | 51/198 | 25.76|
+| |o3-Pro Web Search | 66/198 | 33.33 |
+| | - | - | - |
+| | - | - | - |
+
+
 ## Demos
 
 ### Case MM-94: Lumbar Spine MRI
