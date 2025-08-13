@@ -59,7 +59,7 @@ The following table shows the performance of different GPT-5 models on the diagn
 | Category | Model | Result | Accuracy (%) |
 |----------|-------|---------|--------------|
 | **LLM** | GPT-5 Auto| 55/198 | 27.78 |
-| | GPT-5 Fast | - | - |
+| | GPT-5 Fast | 45/160 | 28.13 |
 | | GPT-5 Thinking mini | - | - |
 | | GPT-5 Thinking mini (quick) | - | - |
 | | GPT-5 Thinking | 55/198 | 27.78 |
@@ -73,7 +73,7 @@ The following table shows the performance of different GPT-5 models on the diagn
 | | GPT-5 Thinking (quick) Web Search | - | - |
 | | GPT-5 Pro Web Search | 78/198 | 39.39 |
 | **Agent** | ChatGPT Agent | 61/198 | 30.81 |
-| | Deep Research | - | - |
+| | Deep Research | 19/79 | 24.05 |
 
 
 The following table shows the performance of different 4o/o3 models on the diagnosis dataset:
