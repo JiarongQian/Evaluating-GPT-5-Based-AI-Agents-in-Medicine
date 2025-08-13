@@ -61,6 +61,7 @@ The following table shows the performance of different GPT-5 models on the diagn
 | **LLM** | GPT-5 Auto| 55/198 | 27.78 |
 | | GPT-5 Fast | - | - |
 | | GPT-5 Thinking mini | - | - |
+| | GPT-5 Thinking mini (quick) | - | - |
 | | GPT-5 Thinking | 55/198 | 27.78 |
 | | GPT-5 Thinking (quick) | 52/198 | 26.26 |
 | | GPT-5 Pro | 62/198 | 31.31 |
