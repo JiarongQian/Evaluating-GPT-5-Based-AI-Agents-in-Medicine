@@ -17,11 +17,12 @@ https://JiarongQian.github.io/AgentMed
 - **Wei Liu** - Mayo Clinic
 - **Quangzheng Li** - Lehigh University
 - **Xiang Li** - MGH/Harvard Medical School
+- **Xing Lei** - Stanford University
 - **Lifang He** - Lehigh University
 - **Jing Huang** - University of Pennsylvania
 - **Lichao Sun** - Lehigh University
 
-**Affiliations:** Lehigh University, University of Pennsylvania, Mayo Clinic, Harvard Medical School, Massachusetts General Hospital, University of Florida
+**Affiliations:** Lehigh University, University of Pennsylvania, Mayo Clinic, Harvard Medical School, Massachusetts General Hospital, Stanford University, University of Florida
 
 ## Introduction
 
@@ -169,7 +170,7 @@ If you use this project in your research, please cite:
 ```bibtex
 @inproceedings{2025_AgentMed,
   title={AgentMed: Evaluating GPT-5 AI Agents in Medicine},
-  author={Shaohui Zhang,Jiarong Qian,Zhiling Yan,Kai Zhang,Yonghui Wu,Wei Liu,Quangzheng Li,Xiang Li,Lifang He,Jing Huang,Lichao Sun},
+  author={Shaohui Zhang,Jiarong Qian,Zhiling Yan,Kai Zhang,Yonghui Wu,Wei Liu,Quangzheng Li,Xiang Li, Xing Lei, Lifang He,Jing Huang,Lichao Sun},
   booktitle={},
   year={2025},
 }
