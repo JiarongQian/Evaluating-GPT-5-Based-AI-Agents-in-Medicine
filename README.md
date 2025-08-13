@@ -68,6 +68,7 @@ The following table shows the performance of different GPT-5 models on the diagn
 | **Web-Search** | GPT-5 Auto Web Search | 40/198 | 20.20 |
 | | GPT-5 Fast Web Search | - | - |
 | | GPT-5 Thinking mini Web Search | - | - |
+| | GPT-5 Thinking mini (quick) Web Search | - | - |
 | | GPT-5 Thinking Web Search | 65/198 | 32.83 |
 | | GPT-5 Thinking (quick) Web Search | - | - |
 | | GPT-5 Pro Web Search | 78/198 | 39.39 |
