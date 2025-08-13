@@ -73,6 +73,8 @@ The following table shows the performance of different GPT-5 models on the diagn
 The following table shows the performance of different 4o/o3 models on the diagnosis dataset:
 | Category | Model | Result | Accuracy (%) |
 |----------|-------|---------|--------------|
+| **LLM** | 4o | 53/198 | 26.77 |
+| | o3-Pro |- |- |
 | **Web-Search** | 4o Web Search | 51/198 | 25.76|
 | |o3-Pro Web Search | 66/198 | 33.33 |
 | | - | - | - |
