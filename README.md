@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project presents a comprehensive evaluation of GPT-5 AI agents in medical diagnosis tasks. We systematically assess the performance of a hierarchy of OpenAI models and systems, from base large language models to autonomous agents, to understand the impact of incremental capabilities on clinical intelligence.
+This project conducts a systematic evaluation of GPT-5 AI agents in medical diagnosis tasks. We assess the performance of a hierarchy of OpenAI models and systems—from base large language models to fully autonomous agents—to quantify how incremental advancements in capabilities influence clinical reasoning and decision-making accuracy.
 
 ## Main Page
 https://JiarongQian.github.io/AgentMed
@@ -22,8 +22,7 @@ https://JiarongQian.github.io/AgentMed
 - **Jing Huang** - University of Pennsylvania
 - **Lichao Sun** - Lehigh University
 
-**Affiliations:** Lehigh University, University of Pennsylvania, Mayo Clinic, Harvard Medical School, Massachusetts General Hospital, Stanford University, University of Florida
-
+**Affiliations:** Lehigh University, University of Pennsylvania,University of Florida, Mayo Clinic, Harvard Medical School, Massachusetts General Hospital, Stanford University
 ## Introduction
 
 Large language models (LLMs) are increasingly being augmented with reasoning and tool-use capabilities, creating a spectrum of AI systems from simple chatbots to autonomous agents. This rapid evolution has fueled visions of Artificial Super Intelligence (ASI) revolutionizing medicine, yet the true gap between current systems and this future remains unquantified.
