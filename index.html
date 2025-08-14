@@ -25,7 +25,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>AgentMed: Evaluating GPT-5 AI Agents in Medicine</title>
+  <title>AgentMed: Evaluating GPT-5-Based AI Agents in Medicine</title>
   <link rel="icon" type="image/x-icon" href="static/images/logo.">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
@@ -58,7 +58,7 @@
               <img src="static\images\LOGO.png" alt="Project Logo"
                    style="position: absolute; left: calc(50% - 350px); width: 180px; height: auto; vertical-align: middle;">
             </div>
-            <h2 class="title is-3 is-normal publication-title" style="font-weight: normal;">AgentMed: Evaluating GPT-5 AI Agents in Medicine</h2>
+            <h2 class="title is-3 is-normal publication-title" style="font-weight: normal;">AgentMed: Evaluating GPT-5-Based AI Agents in Medicine</h2>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               
@@ -66,11 +66,9 @@
               <span class="author-block">Jiarong Qian,</span>
               <span class="author-block">Zhiling Yan,</span>
               <span class="author-block">Kai Zhang,</span>
-               <span class="author-block">Yonghui Wu,</span>
               <span class="author-block">Wei Liu,</span>
               <span class="author-block">Quangzheng Li,</span>
               <span class="author-block">Xiang Li</span>
-               <span class="author-block">Xing Lei,</span>
               <span class="author-block">Lifang He,</span>
               <span class="author-block">Jing Huang,</span>
               <span class="author-block">Lichao Sun</span>
@@ -78,7 +76,7 @@
             </div>
 
             <div class="is-size-5 publication-authors">
-              <span class="author-block">Lehigh University, University of Pennsylvania,University of Florida, Mayo Clinic, Harvard Medical School, Massachusetts General Hospital,Stanford University
+              <span class="author-block">Lehigh University, University of Pennsylvania, Mayo Clinic, Harvard Medical School, Massachusetts General Hospital
             </div>
 
             <div class="column has-text-centered">
@@ -262,16 +260,46 @@
                 </tr>
               </thead>
               <tbody>
-                <!-- LLL Group -->
+                <!-- LLM Group -->
                 <tr class="group-1">
-                  <td rowspan="4" class="has-text-weight-bold" style="text-align: center; vertical-align: middle;">LLM</td>
-                  <td class="model-1">GPT-5</td>
+                  <td rowspan="7" class="has-text-weight-bold" style="text-align: center; vertical-align: middle;">LLM</td>
+                  <td class="model-1">GPT-5 Auto</td>
                   <td class="data-cell">
                     <span class="cell-value">55/198</span>
                   </td>
                   <td class="data-cell">
                     <div class="progress-bar-1" style="width: 27.78%;"></div>
                     <span class="cell-value">27.78</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="model-1"><strong>GPT-5 Fast</strong></td>
+                  <td class="data-cell">
+                    <span class="cell-value">50/198</span>
+                  </td>
+                  <td class="data-cell">
+                    <div class="progress-bar-1" style="width: 25.25%;"></div>
+                    <span class="cell-value">25.25</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="model-1">GPT-5 Thinking mini</td>
+                  <td class="data-cell">
+                    <span class="cell-value">-</span>
+                  </td>
+                  <td class="data-cell">
+                    <div class="progress-bar-1" style="width: 0%;"></div>
+                    <span class="cell-value">-</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="model-1"><strong>GPT-5 Thinking mini (quick)</strong></td>
+                  <td class="data-cell">
+                    <span class="cell-value">57/198</span>
+                  </td>
+                  <td class="data-cell">
+                    <div class="progress-bar-1" style="width: 28.79%;"></div>
+                    <span class="cell-value">28.79</span>
                   </td>
                 </tr>
                 <tr>
@@ -290,14 +318,14 @@
                     <span class="cell-value">52/198</span>
                   </td>
                   <td class="data-cell">
-                    <div class="progress-bar-1" style="width: 27.77%;"></div>
+                    <div class="progress-bar-1" style="width: 26.26%;"></div>
                     <span class="cell-value">26.26</span>
                   </td>
                 </tr>
                 <tr>
                   <td class="model-1">GPT-5 Pro</td>
                   <td class="data-cell">
-                    <span class="cell-value"> 62/198</span>
+                    <span class="cell-value">62/198</span>
                   </td>
                   <td class="data-cell">
                     <div class="progress-bar-1" style="width: 31.31%;"></div>
@@ -307,14 +335,34 @@
                 
                 <!-- Web-Search Group -->
                 <tr class="group-2">
-                  <td rowspan="4" class="has-text-weight-bold" style="text-align: center; vertical-align: middle;">Web-Search</td>
-                  <td class="model-2">GPT-5 Web Search</td>
+                  <td rowspan="5" class="has-text-weight-bold" style="text-align: center; vertical-align: middle;">Web-Search</td>
+                  <td class="model-2">GPT-5 Auto Web Search</td>
                   <td class="data-cell">
                     <span class="cell-value">40/198</span>
                   </td>
                   <td class="data-cell">
                     <div class="progress-bar-2" style="width: 20.20%;"></div>
                     <span class="cell-value">20.20</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="model-2">GPT-5 Fast Web Search</td>
+                  <td class="data-cell">
+                    <span class="cell-value">-</span>
+                  </td>
+                  <td class="data-cell">
+                    <div class="progress-bar-2" style="width: 0%;"></div>
+                    <span class="cell-value">-</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="model-2">GPT-5 Thinking mini Web Search</td>
+                  <td class="data-cell">
+                    <span class="cell-value">-</span>
+                  </td>
+                  <td class="data-cell">
+                    <div class="progress-bar-2" style="width: 0%;"></div>
+                    <span class="cell-value">-</span>
                   </td>
                 </tr>
                 <tr>
@@ -328,22 +376,12 @@
                   </td>
                 </tr>
                 <tr>
-                  <td class="model-2">GPT-5 Thinking (quick) Web Search</td>
-                  <td class="data-cell">
-                    <span class="cell-value">-</span>
-                  </td>
-                  <td class="data-cell">
-                    <div class="progress-bar-2" style="width: 0%;"></div>
-                    <span class="cell-value">-</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="model-2"> GPT-5 Pro Web Search</td>
+                  <td class="model-2">GPT-5 Pro Web Search</td>
                   <td class="data-cell">
                     <span class="cell-value">78/198</span>
                   </td>
                   <td class="data-cell">
-                    <div class="progress-bar-2" style="width: 40.30%;"></div>
+                    <div class="progress-bar-2" style="width: 39.39%;"></div>
                     <span class="cell-value">39.39</span>
                   </td>
                 </tr>
@@ -353,21 +391,21 @@
                   <td rowspan="2" class="has-text-weight-bold" style="text-align: center; vertical-align: middle;">Agent</td>
                   <td class="model-3">ChatGPT Agent</td>
                   <td class="data-cell">
-                    <span class="cell-value">34/102</span>
+                    <span class="cell-value">61/198</span>
                   </td>
                   <td class="data-cell">
-                    <div class="progress-bar-3" style="width: 33.33%;"></div>
-                    <span class="cell-value">33.33</span>
+                    <div class="progress-bar-3" style="width: 30.81%;"></div>
+                    <span class="cell-value">30.81</span>
                   </td>
                 </tr>
                 <tr>
                   <td class="model-3">Deep Research</td>
                   <td class="data-cell">
-                    <span class="cell-value">-</span>
+                    <span class="cell-value">19/79</span>
                   </td>
                   <td class="data-cell">
-                    <div class="progress-bar-3" style="width: 0%;"></div>
-                    <span class="cell-value">-</span>
+                    <div class="progress-bar-3" style="width: 24.05%;"></div>
+                    <span class="cell-value">24.05</span>
                   </td>
                 </tr>
               </tbody>
@@ -380,6 +418,79 @@
     </div>
   </section>
   <!-- End Leaderboard -->
+
+  <!-- Second Leaderboard Table -->
+  <section class="section">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-10">
+          <div class="table-container">
+            <div class="table-title">
+              Table 2: Performance of Different 4o/o3 Models on the Diagnosis Dataset (Accuracy %)
+            </div>
+            <table id="leaderboard-table-2" class="table is-bordered is-fullwidth">
+              <thead>
+                <tr>
+                  <th>Category</th>
+                  <th>Model</th>
+                  <th>Result</th>
+                  <th>Accuracy (%)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- LLM Group -->
+                <tr class="group-1">
+                  <td rowspan="2" class="has-text-weight-bold" style="text-align: center; vertical-align: middle;">LLM</td>
+                  <td class="model-1">4o</td>
+                  <td class="data-cell">
+                    <span class="cell-value">53/198</span>
+                  </td>
+                  <td class="data-cell">
+                    <div class="progress-bar-1" style="width: 26.77%;"></div>
+                    <span class="cell-value">26.77</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="model-1">o3-Pro</td>
+                  <td class="data-cell">
+                    <span class="cell-value">-</span>
+                  </td>
+                  <td class="data-cell">
+                    <div class="progress-bar-1" style="width: 0%;"></div>
+                    <span class="cell-value">-</span>
+                  </td>
+                </tr>
+                
+                <!-- Web-Search Group -->
+                <tr class="group-2">
+                  <td rowspan="2" class="has-text-weight-bold" style="text-align: center; vertical-align: middle;">Web-Search</td>
+                  <td class="model-2">4o Web Search</td>
+                  <td class="data-cell">
+                    <span class="cell-value">51/198</span>
+                  </td>
+                  <td class="data-cell">
+                    <div class="progress-bar-2" style="width: 25.76%;"></div>
+                    <span class="cell-value">25.76</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="model-2">o3-Pro Web Search</td>
+                  <td class="data-cell">
+                    <span class="cell-value">66/198</span>
+                  </td>
+                  <td class="data-cell">
+                    <div class="progress-bar-2" style="width: 33.33%;"></div>
+                    <span class="cell-value">33.33</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Second Leaderboard Table -->
 
 
 
@@ -412,8 +523,8 @@
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
       <pre><code>@inproceedings{2025_AgentMed,
-  title={AgentMed: Evaluating GPT-5 AI Agents in Medicine},
-  author={Shaohui Zhang,Jiarong Qian,Zhiling Yan,Kai Zhang,Yonghui Wu,Wei Liu,Quangzheng Li,Xiang Li,Xing Lei,Lifang He,Jing Huang,Lichao Sun},
+  title={AgentMed: Evaluating GPT-5-Based AI Agents in Medicine},
+  author={Shaohui Zhang，Jiarong Qian，Zhiling Yan，Kai Zhang，Lifang He ，Jing Huang ，Lichao Sun},
   booktitle={},
   year={2025},
 }
