@@ -35,7 +35,7 @@ This work provides a crucial benchmark of OpenAI's model ecosystem, establishing
 
 ## Dataset
 
-Our dataset is derived from **MedXpertQA**, a publicly available benchmark introduced for Human Health tasks. The dataset contains 198 diagnosis cases distributed across 11 body systems:
+Our dataset is derived from **MedXpertQA**, a publicly available benchmark for Human Health tasks. Our dataset was curated through **physician review and selection**, comprising 198 diagnosis cases spanning 11 body systems:
 
 - **Cardiovascular**: 40 cases
 - **Digestive**: 35 cases  
@@ -53,7 +53,7 @@ Each case has a unique identifier and an open-ended, reasoning-style diagnostic 
 
 ## Leaderboard
 
-The following table shows the performance of different GPT-5 models on the diagnosis dataset:
+The following table shows the performance of different GPT-5 models on our diagnosis dataset:
 
 | Category | Model | Result | Accuracy (%) |
 |----------|-------|---------|--------------|
@@ -73,7 +73,7 @@ The following table shows the performance of different GPT-5 models on the diagn
 | | Deep Research | 19/79 | 24.05 |
 
 
-The following table shows the performance of different 4o/o3 models on the diagnosis dataset:
+The following table shows the performance of different 4o/o3 models on our diagnosis dataset:
 | Category | Model | Result | Accuracy (%) |
 |----------|-------|---------|--------------|
 | **LLM** | 4o | 53/198 | 26.77 |
