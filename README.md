@@ -59,7 +59,7 @@ The following table shows the performance of different GPT-5 models on the diagn
 | Category | Model | Result | Accuracy (%) |
 |----------|-------|---------|--------------|
 | **LLM** | GPT-5 Auto| 55/198 | 27.78 |
-| | GPT-5 Fast | 58/198 | 29.29 |
+| | GPT-5 Fast | 50/198 | 25.25 |
 | | GPT-5 Thinking mini | - | - |
 | | GPT-5 Thinking mini (quick) | - | - |
 | | GPT-5 Thinking | 55/198 | 27.78 |
