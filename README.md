@@ -66,7 +66,7 @@ The following table shows the performance of different GPT-5 models on our diagn
 | | GPT-5 Pro | 62/198 | 31.31 |
 | **Web-Search** | GPT-5 Auto Web Search | 40/198 | 20.20 |
 | | **GPT-5 Fast Web Search** | 43/198 | 21.72 |
-| | GPT-5 Thinking mini Web Search | - | - |
+| | **GPT-5 Thinking mini Web Search** | 55/198 | 27.78 |
 | | GPT-5 Thinking Web Search | 65/198 | 32.83 |
 | | GPT-5 Pro Web Search | 78/198 | 39.39 |
 | **Agent** | ChatGPT Agent | 61/198 | 30.81 |
