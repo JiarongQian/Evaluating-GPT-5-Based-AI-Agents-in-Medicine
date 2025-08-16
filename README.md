@@ -53,6 +53,8 @@ Each case has a unique identifier and an open-ended, reasoning-style diagnostic 
 
 ## Leaderboard
 
+**GPT-5 As Judge**
+
 The following table shows the performance of different GPT-5 models on our diagnosis dataset:
 
 | Category | Model | Result | Accuracy (%) |
