@@ -15,7 +15,7 @@ https://JiarongQian.github.io/AgentMed
 - **Kai Zhang** - Lehigh University
 - **Yonghui Wu** - University of Florida
 - **Wei Liu** - Mayo Clinic
-- **Quangzheng Li** - Lehigh University
+- **Quangzheng Li** - MGH/Harvard Medical School
 - **Xiang Li** - MGH/Harvard Medical School
 - **Xing Lei** - Stanford University
 - **Lifang He** - Lehigh University
