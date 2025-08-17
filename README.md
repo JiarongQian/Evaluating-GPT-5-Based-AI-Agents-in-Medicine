@@ -72,7 +72,7 @@ The following table shows the performance of different GPT-5 models on our diagn
 | | GPT-5 Thinking Web Search | 65/198 | 32.83 |
 | | GPT-5 Pro Web Search | 78/198 | 39.39 |
 | **Agent** | ChatGPT Agent | 61/198 | 30.81 |
-| | Deep Research | 19/79 | 24.05 |
+| | Deep Research | 35/155 | 22.58 |
 
 
 The following table shows the performance of different 4o/o3 models on our diagnosis dataset:
