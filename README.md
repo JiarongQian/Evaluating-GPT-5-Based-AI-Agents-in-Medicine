@@ -10,7 +10,7 @@ https://JiarongQian.github.io/AgentMed
 ## Authors
 
 - **Shaohui Zhang** - University of Pennsylvania
-- **Jiarong Qian** - University of Pennsylvania
+- **Jiarong Qian** - 
 - **Zhiling Yan** - Lehigh University
 - **Kai Zhang** - Lehigh University
 - **Yonghui Wu** - University of Florida
@@ -25,13 +25,15 @@ https://JiarongQian.github.io/AgentMed
 **Affiliations:** Lehigh University, University of Pennsylvania,University of Florida, Mayo Clinic, Harvard Medical School, Massachusetts General Hospital, Stanford University
 ## Introduction
 
-Large language models (LLMs) are increasingly being augmented with reasoning and tool-use capabilities, creating a spectrum of AI systems from simple chatbots to autonomous agents. This rapid evolution has fueled visions of Artificial Super Intelligence (ASI) revolutionizing medicine, yet the true gap between current systems and this future remains unquantified.
+Large language models (LLMs) have recently shown strong performance on medical exams and curated benchmarks. However, existing medical LLM benchmarks remain fragmented. Many focus on narrow tasks such as single-choice exam questions or single modalities such as image-only VQA, which fail to capture the complexity of real diagnosis. They also provide limited insight into reasoning quality and safety. 
 
-It is unclear how incremental capabilities, from web search to agentic planning, affect performance on the path towards superhuman clinical intelligence, necessitating a comprehensive, ecosystem-wide evaluation. Here, we systematically evaluate the performance of a hierarchy of OpenAI models and systems on medical diagnosis tasks.
+In reality, diagnostic practice is open-ended, with many possible hypotheses rather than fixed choices, and multimodal, requiring the integration of imaging, laboratory data, history, and physical findings. Most existing medical benchmarks, by contrast, are based on multiple-choice formats, which oversimplify the diagnostic process and fail to capture the complexity of real clinical reasoning. At present, there is no systematic, clinically grounded standard to evaluate how models perform in real diagnostic workflows, where accuracy, reasoning, and robustness must be considered together. This gap leaves it unclear whether current LLMs are truly ready for clinical use.
 
-Our analysis spans from the base large language model (e.g., GPT-5) to models enhanced with reasoning, web search, a deep research function, and a fully autonomous agent. We show that while augmenting models with external information tools improves data retrieval, it does not consistently translate to superior diagnostic accuracy and can introduce new error vectors.
+To address these limitations, we introduce a benchmark for clinical diagnosis based on a curated subset of MedXpertQA. From an initial pool of more than 1,200 cases, we selected 198 through a combination of automated and expert review. Only cases that required a clinical diagnosis and could be reformulated into open-ended questions with a single correct answer were retained. The final dataset spans 11 body systems and multiple modalities, including CT, MRI, X-ray, PET, pathology slides, EEG/ECG, clinical charts, and photos. Quality control was ensured through multi-stage clinical and non-clinical annotation.
 
-This work provides a crucial benchmark of OpenAI's model ecosystem, establishing a rigorous methodology for evaluating the true clinical readiness of increasingly complex AI systems and guiding their responsible integration into healthcare. Our new evaluation platform aims to establish a rigorous methodology for tracking progress and guiding the responsible development of AI towards a future of safe and reliable super-intelligence in medicine.
+We evaluate models across four capability tiers: base, reasoning-enhanced, web or deep-search augmented, and agentic. Evaluation is conducted across both modalities and body systems. In addition to accuracy, we introduce a strict judgment criterion tailored for open-ended answers, where model predictions are mapped to ground truth concepts through ontology-based normalization (e.g., SNOMED CT / UMLS) to ensure consistent scoring. Beyond correctness, we assess three further dimensions. First is robustness, which considers stability across body systems. Second is tier reliability, which measures whether performance improves consistently as capabilities are added.
+
+Our contributions are threefold. First, we present an ecosystem-level benchmark that systematically compares diagnostic performance across capability tiers. Second, we define a diagnosis judgment criterion for scoring open-ended responses. 
 
 ## Dataset
 
